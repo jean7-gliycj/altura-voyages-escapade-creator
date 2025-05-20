@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { WhatsApp, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin, MessageSquare } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -64,7 +64,7 @@ const Contact = () => {
               </div>
               
               <div className="flex items-start">
-                <WhatsApp className="h-6 w-6 text-altura mr-3 shrink-0 mt-1" />
+                <MessageSquare className="h-6 w-6 text-altura mr-3 shrink-0 mt-1" />
                 <div>
                   <h3 className="font-medium mb-1">WhatsApp</h3>
                   <p className="text-gray-600">+33 6 12 34 56 78</p>
