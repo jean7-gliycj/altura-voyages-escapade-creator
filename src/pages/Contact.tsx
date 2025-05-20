@@ -83,8 +83,8 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-altura mr-3 shrink-0 mt-1" />
                 <div>
                   <h3 className="font-medium mb-1">Email</h3>
-                  <a href="mailto:contact@alturavoyages.fr" className="text-gray-600 hover:text-altura">
-                    contact@alturavoyages.fr
+                  <a href="mailto:alturavoyages@gmail.com" className="text-gray-600 hover:text-altura">
+                    alturavoyages@gmail.com
                   </a>
                   <p className="text-sm text-gray-500 mt-1">Réponse sous 24h</p>
                 </div>
@@ -164,17 +164,6 @@ const Contact = () => {
                 </Button>
               </div>
             </form>
-          </div>
-        </div>
-        
-        {/* Carte Google Maps */}
-        <div className="mt-12">
-          <h2 className="font-display text-2xl font-bold mb-6 text-gray-800">Nous localiser</h2>
-          <div className="rounded-lg overflow-hidden shadow-lg h-80">
-            {/* Simuler une carte Google Maps avec une image */}
-            <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-              <div className="text-gray-600">Carte Google Maps</div>
-            </div>
           </div>
         </div>
       </div>
