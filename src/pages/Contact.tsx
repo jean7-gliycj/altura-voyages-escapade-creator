@@ -67,7 +67,14 @@ const Contact = () => {
                 <MessageSquare className="h-6 w-6 text-altura mr-3 shrink-0 mt-1" />
                 <div>
                   <h3 className="font-medium mb-1">WhatsApp</h3>
-                  <p className="text-gray-600">+33 6 12 34 56 78</p>
+                  <a 
+                    href="https://wa.me/33745913946" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-gray-600 hover:text-altura transition-colors"
+                  >
+                    +33 7 45 91 39 46
+                  </a>
                   <p className="text-sm text-gray-500 mt-1">Disponible 7j/7 de 9h à 19h</p>
                 </div>
               </div>
