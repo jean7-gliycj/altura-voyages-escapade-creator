@@ -17,7 +17,7 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <HeroSection
-        backgroundImage="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1920"
+        backgroundImage="/lovable-uploads/a61aff0e-4d3a-453c-b850-98addd49674c.png"
         title="Découvrez le monde avec ALTURA VOYAGES"
         subtitle="Des voyages sur mesure, des expériences authentiques et des souvenirs inoubliables."
         buttonText="Découvrir nos destinations"

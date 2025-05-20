@@ -21,7 +21,8 @@ const HeroSection = ({
     <div 
       className="relative h-screen min-h-[600px] w-full bg-cover bg-center bg-no-repeat flex items-center"
       style={{ 
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${backgroundImage})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${backgroundImage})`,
+        backgroundPosition: 'center 30%',
       }}
     >
       <div className="container mx-auto px-4">
