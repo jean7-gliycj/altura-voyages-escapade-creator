@@ -52,61 +52,61 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Informations de contact */}
           <div className="lg:col-span-1">
-            <h2 className="font-display text-2xl font-bold mb-6 text-gray-800">Nos coordonnées</h2>
+            <h2 className="font-display text-2xl font-bold mb-6 text-altura text-black">Nos coordonnées</h2>
             
             <div className="space-y-6">
               <div className="flex items-start">
                 <MapPin className="h-6 w-6 text-altura mr-3 shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-medium mb-1">Adresse</h3>
-                  <p className="text-gray-600">123 Rue du Voyage<br />75001 Paris, France</p>
+                  <h3 className="font-medium mb-1 text-black">Adresse</h3>
+                  <p className="text-black">123 Rue du Voyage<br />75001 Paris, France</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <MessageSquare className="h-6 w-6 text-altura mr-3 shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-medium mb-1">WhatsApp</h3>
+                  <h3 className="font-medium mb-1 text-black">WhatsApp</h3>
                   <a 
                     href="https://wa.me/33745913946" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="text-gray-600 hover:text-altura transition-colors"
+                    className="text-black hover:text-altura transition-colors"
                   >
                     +33 7 45 91 39 46
                   </a>
-                  <p className="text-sm text-gray-500 mt-1">Disponible 7j/7 de 9h à 19h</p>
+                  <p className="text-sm text-black mt-1">Disponible 7j/7 de 9h à 19h</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <Mail className="h-6 w-6 text-altura mr-3 shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-medium mb-1">Email</h3>
-                  <a href="mailto:alturavoyages@gmail.com" className="text-gray-600 hover:text-altura">
+                  <h3 className="font-medium mb-1 text-black">Email</h3>
+                  <a href="mailto:alturavoyages@gmail.com" className="text-black hover:text-altura">
                     alturavoyages@gmail.com
                   </a>
-                  <p className="text-sm text-gray-500 mt-1">Réponse sous 24h</p>
+                  <p className="text-sm text-black mt-1">Réponse sous 24h</p>
                 </div>
               </div>
             </div>
             
             <div className="mt-8">
-              <h3 className="font-medium mb-3">Horaires d'ouverture</h3>
-              <p className="text-gray-600 mb-2">Lundi - Vendredi: 9h - 19h</p>
-              <p className="text-gray-600 mb-2">Samedi: 10h - 17h</p>
-              <p className="text-gray-600">Dimanche: Fermé</p>
+              <h3 className="font-medium mb-3 text-black">Horaires d'ouverture</h3>
+              <p className="text-black mb-2">Lundi - Vendredi: 9h - 19h</p>
+              <p className="text-black mb-2">Samedi: 10h - 17h</p>
+              <p className="text-black">Dimanche: Fermé</p>
             </div>
           </div>
           
           {/* Formulaire de contact */}
-          <div className="lg:col-span-2 bg-white rounded-lg shadow-lg p-6 md:p-8">
-            <h2 className="font-display text-2xl font-bold mb-6 text-gray-800">Envoyez-nous un message</h2>
+          <div className="lg:col-span-2 bg-white rounded-lg shadow-lg p-6 md:p-8 border border-altura">
+            <h2 className="font-display text-2xl font-bold mb-6 text-black">Envoyez-nous un message</h2>
             
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Nom complet *</label>
+                  <label htmlFor="name" className="block text-sm font-medium text-black mb-1">Nom complet *</label>
                   <input
                     required
                     type="text"
@@ -114,12 +114,13 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                    className="w-full p-2 border border-altura rounded-md focus:outline-none focus:ring-1 focus:ring-altura text-black"
+                    placeholder="Votre nom"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-black mb-1">Email *</label>
                   <input
                     required
                     type="email"
@@ -127,13 +128,14 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                    className="w-full p-2 border border-altura rounded-md focus:outline-none focus:ring-1 focus:ring-altura text-black"
+                    placeholder="Votre email"
                   />
                 </div>
               </div>
               
               <div className="mb-6">
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Sujet *</label>
+                <label htmlFor="subject" className="block text-sm font-medium text-black mb-1">Sujet *</label>
                 <input
                   required
                   type="text"
@@ -141,12 +143,13 @@ const Contact = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                  className="w-full p-2 border border-altura rounded-md focus:outline-none focus:ring-1 focus:ring-altura text-black"
+                  placeholder="Sujet de votre message"
                 />
               </div>
               
               <div className="mb-6">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message *</label>
+                <label htmlFor="message" className="block text-sm font-medium text-black mb-1">Message *</label>
                 <textarea
                   required
                   id="message"
@@ -154,12 +157,13 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={5}
-                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                  className="w-full p-2 border border-altura rounded-md focus:outline-none focus:ring-1 focus:ring-altura text-black"
+                  placeholder="Votre message..."
                 />
               </div>
               
               <div>
-                <Button type="submit" className="bg-altura hover:bg-altura-light text-white px-6 py-2">
+                <Button type="submit" className="bg-altura hover:bg-altura-light text-black px-6 py-2">
                   Envoyer le message
                 </Button>
               </div>
