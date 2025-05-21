@@ -1,4 +1,3 @@
-
 import { Destination } from "@/types";
 
 export const destinations: Destination[] = [
@@ -282,5 +281,183 @@ export const destinations: Destination[] = [
     price: 1680,
     theme: "Nature",
     description: "Assistez au spectacle magique des aurores boréales dans le ciel arctique, une expérience inoubliable au cœur de paysages hivernaux enchanteurs."
+  },
+  
+  // Nouvelles destinations avec thèmes spécifiques
+  
+  // Destinations "Hôtel"
+  {
+    id: "burj-al-arab",
+    name: "Burj Al Arab",
+    image: "https://images.unsplash.com/photo-1586778793535-c63253409d4d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Émirats Arabes Unis",
+    continent: "Asie",
+    price: 3800,
+    theme: "Hôtel",
+    description: "Séjournez dans l'un des hôtels les plus luxueux au monde, avec ses suites somptueuses, son service impeccable et sa vue imprenable sur le golfe Persique."
+  },
+  {
+    id: "atlantis-dubai",
+    name: "Atlantis The Palm",
+    image: "https://images.unsplash.com/photo-1601600576337-c1d8a0d1373f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Émirats Arabes Unis",
+    continent: "Asie",
+    price: 2200,
+    theme: "Hôtel",
+    description: "Découvrez cet hôtel emblématique sur l'île artificielle The Palm, avec son parc aquatique, son aquarium géant et ses restaurants de renommée mondiale."
+  },
+  
+  // Destinations "Spa"
+  {
+    id: "blue-lagoon",
+    name: "Blue Lagoon",
+    image: "https://images.unsplash.com/photo-1585116938441-0f7f0bd0b979?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Islande",
+    continent: "Europe",
+    price: 1200,
+    theme: "Spa",
+    description: "Détendez-vous dans les eaux géothermales du Blue Lagoon, un spa naturel entouré de paysages volcaniques fascinants."
+  },
+  {
+    id: "bali-spa",
+    name: "Spas de Bali",
+    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Indonésie",
+    continent: "Asie",
+    price: 950,
+    theme: "Spa",
+    description: "Vivez une expérience de bien-être ultime dans les spas luxueux de Bali, avec leurs soins traditionnels et leur cadre tropical idyllique."
+  },
+  
+  // Destinations "Sport Nautique"
+  {
+    id: "hawaii-surf",
+    name: "Surf à Hawaii",
+    image: "https://images.unsplash.com/photo-1501963157834-7ef975a93310?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "États-Unis",
+    continent: "Océanie",
+    price: 1850,
+    theme: "Sport Nautique",
+    description: "Surfez sur les vagues légendaires d'Hawaii, berceau du surf moderne, et profitez de ses plages de sable noir et de sa culture unique."
+  },
+  {
+    id: "maldives-nautique",
+    name: "Sports Nautiques aux Maldives",
+    image: "https://images.unsplash.com/photo-1514921961698-c8b8c6a5b079?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Maldives",
+    continent: "Asie",
+    price: 2100,
+    theme: "Sport Nautique",
+    description: "Pratiquez une variété de sports nautiques dans les eaux cristallines des Maldives, du kayak au windsurf en passant par le paddleboard."
+  },
+  
+  // Destinations "Jet Ski"
+  {
+    id: "cancun-jetski",
+    name: "Jet Ski à Cancún",
+    image: "https://images.unsplash.com/photo-1534254310130-e81ca345c411?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Mexique",
+    continent: "Amérique",
+    price: 1300,
+    theme: "Jet Ski",
+    description: "Adonnez-vous au jet ski dans les eaux turquoise de Cancún, l'une des destinations les plus populaires pour les amateurs de sports nautiques."
+  },
+  {
+    id: "miami-jetski",
+    name: "Jet Ski à Miami",
+    image: "https://images.unsplash.com/photo-1534254836328-85556e773da7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "États-Unis",
+    continent: "Amérique",
+    price: 980,
+    theme: "Jet Ski",
+    description: "Explorez la baie de Miami en jet ski et admirez le skyline impressionnant de la ville depuis l'eau."
+  },
+  
+  // Destinations "Plongée"
+  {
+    id: "grande-barriere",
+    name: "Grande Barrière de Corail",
+    image: "https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Australie",
+    continent: "Océanie",
+    price: 1950,
+    theme: "Plongée",
+    description: "Plongez au cœur de la plus grande barrière de corail du monde, un écosystème marin d'une richesse incomparable."
+  },
+  {
+    id: "palau",
+    name: "Palau",
+    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Palau",
+    continent: "Océanie",
+    price: 2300,
+    theme: "Plongée",
+    description: "Découvrez l'un des meilleurs spots de plongée au monde, avec ses lacs aux méduses, ses grottes sous-marines et ses épaves de la Seconde Guerre mondiale."
+  },
+  
+  // Destinations "Montagne"
+  {
+    id: "alpes-suisses",
+    name: "Alpes Suisses",
+    image: "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Suisse",
+    continent: "Europe",
+    price: 1580,
+    theme: "Montagne",
+    description: "Explorez les majestueuses Alpes suisses, avec leurs sommets enneigés, leurs villages pittoresques et leurs stations de ski de renommée mondiale."
+  },
+  {
+    id: "everest-basecamp",
+    name: "Camp de Base de l'Everest",
+    image: "https://images.unsplash.com/photo-1623937228271-992646fb0fba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Népal",
+    continent: "Asie",
+    price: 2800,
+    theme: "Montagne",
+    description: "Relevez le défi du trek vers le camp de base du mont Everest et admirez les panoramas à couper le souffle de l'Himalaya."
+  },
+  
+  // Destinations "Nature" additionnelles
+  {
+    id: "amazonie",
+    name: "Amazonie",
+    image: "https://images.unsplash.com/photo-1570741066052-817c6de995c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Brésil",
+    continent: "Amérique",
+    price: 1700,
+    theme: "Nature",
+    description: "Aventurez-vous dans la plus grande forêt tropicale du monde, un sanctuaire de biodiversité abritant des milliers d'espèces uniques."
+  },
+  {
+    id: "yellowstone",
+    name: "Parc National de Yellowstone",
+    image: "https://images.unsplash.com/photo-1553693417-c8e5211b1e6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "États-Unis",
+    continent: "Amérique",
+    price: 1400,
+    theme: "Nature",
+    description: "Explorez le premier parc national américain, célèbre pour ses geysers, sa faune sauvage et ses paysages géothermiques spectaculaires."
+  },
+  
+  // Autres destinations Safari
+  {
+    id: "serengeti",
+    name: "Serengeti",
+    image: "https://images.unsplash.com/photo-1547970810-dc1eac37d174?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Tanzanie",
+    continent: "Afrique",
+    price: 2100,
+    theme: "Safari",
+    description: "Assistez à la grande migration dans les plaines du Serengeti, l'un des plus grands spectacles naturels au monde."
+  },
+  {
+    id: "kruger-park",
+    name: "Parc Kruger",
+    image: "https://images.unsplash.com/photo-1551701113-60eec9564876?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Afrique du Sud",
+    continent: "Afrique",
+    price: 1680,
+    theme: "Safari",
+    description: "Partez à la découverte du célèbre parc Kruger, l'une des plus grandes réserves animalières d'Afrique, abritant les Big Five et bien plus encore."
   }
 ];
