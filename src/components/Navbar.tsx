@@ -20,17 +20,16 @@ const Navbar = () => {
   ];
   
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-sm z-50 shadow-sm">
+    <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-90 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto px-4 py-3 md:py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img 
-                src="/lovable-uploads/66b71363-7db2-4887-b262-3ce32cfd76dd.png" 
+                src="/lovable-uploads/9faaccf6-d73a-4cb3-b308-fc9a90914563.png" 
                 alt="Altura Voyages Logo" 
                 className="h-16 md:h-20 mr-3" 
               />
-              <span className="font-display text-2xl font-bold text-altura">ALTURA VOYAGES</span>
             </Link>
           </div>
           
@@ -41,7 +40,7 @@ const Navbar = () => {
                 key={link.path}
                 to={link.path}
                 className={`text-sm font-medium whitespace-nowrap transition-colors hover:text-altura ${
-                  isActive(link.path) ? 'text-altura border-b-2 border-altura' : 'text-gray-600'
+                  isActive(link.path) ? 'text-altura border-b-2 border-altura' : 'text-gray-400'
                 }`}
               >
                 {link.title}
@@ -55,21 +54,21 @@ const Navbar = () => {
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {mobileMenuOpen ? <X size={24} className="text-white" /> : <Menu size={24} className="text-white" />}
           </button>
         </div>
       </div>
       
       {/* Menu mobile */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white py-4 px-4 shadow-lg animate-fadeIn">
+        <div className="md:hidden bg-black py-4 px-4 shadow-lg animate-fadeIn">
           <div className="flex flex-col space-y-4">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 className={`text-base font-medium transition-colors py-2 ${
-                  isActive(link.path) ? 'text-altura' : 'text-gray-600'
+                  isActive(link.path) ? 'text-altura' : 'text-gray-400'
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >

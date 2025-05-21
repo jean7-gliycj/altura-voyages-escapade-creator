@@ -12,11 +12,10 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="/lovable-uploads/66b71363-7db2-4887-b262-3ce32cfd76dd.png" 
+                src="/lovable-uploads/9faaccf6-d73a-4cb3-b308-fc9a90914563.png" 
                 alt="Altura Voyages Logo" 
-                className="h-20 mr-3" 
+                className="h-24 mr-3" 
               />
-              <h3 className="font-display text-xl font-semibold text-altura">ALTURA VOYAGES</h3>
             </div>
             <p className="text-sm mb-4">
               Votre partenaire de confiance pour des voyages inoubliables à travers le monde.
