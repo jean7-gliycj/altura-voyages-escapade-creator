@@ -37,26 +37,26 @@ const OfferCard = ({
       </div>
       
       <div className="p-4">
-        <h3 className="font-display text-xl font-semibold mb-2">{title}</h3>
+        <h3 className="font-display text-xl font-semibold mb-2 text-black">{title}</h3>
         
-        <div className="flex items-center text-gray-500 mb-3">
+        <div className="flex items-center text-black mb-3">
           <Calendar className="h-4 w-4 mr-1" />
           <span className="text-sm">{duration}</span>
         </div>
         
-        <p className="text-sm text-gray-600 mb-4 line-clamp-2">
+        <p className="text-sm text-black mb-4 line-clamp-2">
           {description}
         </p>
         
         <div className="flex justify-between items-center">
           <div>
-            <span className="text-sm text-gray-500 line-through">{originalPrice} €</span>
-            <span className="ml-2 text-lg font-bold text-altura">{discountedPrice} €</span>
+            <span className="text-sm text-black line-through">{originalPrice} €</span>
+            <span className="ml-2 text-lg font-bold text-black">{discountedPrice} €</span>
           </div>
           
           <Link 
             to={`/offres/${id}`} 
-            className="bg-altura text-white px-4 py-2 rounded-md hover:bg-altura-light transition-colors"
+            className="bg-altura text-black px-4 py-2 rounded-md hover:bg-altura-light transition-colors font-medium"
           >
             Voir l'offre
           </Link>

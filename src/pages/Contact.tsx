@@ -106,7 +106,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Nom complet *</label>
+                  <label htmlFor="name" className="block text-sm font-medium text-black mb-1">Nom complet *</label>
                   <input
                     required
                     type="text"
@@ -119,7 +119,7 @@ const Contact = () => {
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-black mb-1">Email *</label>
                   <input
                     required
                     type="email"
@@ -133,7 +133,7 @@ const Contact = () => {
               </div>
               
               <div className="mb-6">
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Sujet *</label>
+                <label htmlFor="subject" className="block text-sm font-medium text-black mb-1">Sujet *</label>
                 <input
                   required
                   type="text"
@@ -146,7 +146,7 @@ const Contact = () => {
               </div>
               
               <div className="mb-6">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message *</label>
+                <label htmlFor="message" className="block text-sm font-medium text-black mb-1">Message *</label>
                 <textarea
                   required
                   id="message"

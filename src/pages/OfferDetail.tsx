@@ -115,8 +115,8 @@ const OfferDetail = () => {
                 >
                   <div className="font-medium text-black">Classe Économique</div>
                   <div className="flex justify-between items-center mt-1">
-                    <span className="text-sm text-gray-500 line-through">{offer.originalPrice} €</span>
-                    <span className="text-lg font-bold text-altura">{offer.discountedPrice} €</span>
+                    <span className="text-sm text-black line-through">{offer.originalPrice} €</span>
+                    <span className="text-lg font-bold text-black">{offer.discountedPrice} €</span>
                   </div>
                 </div>
                 
@@ -128,8 +128,8 @@ const OfferDetail = () => {
                 >
                   <div className="font-medium text-black font-bold">VIP</div>
                   <div className="flex justify-between items-center mt-1">
-                    <span className="text-sm text-gray-500 line-through">{Math.round(offer.originalPrice * 1.6)} €</span>
-                    <span className="text-lg font-bold text-altura">{businessClassPrice} €</span>
+                    <span className="text-sm text-black line-through">{Math.round(offer.originalPrice * 1.6)} €</span>
+                    <span className="text-lg font-bold text-black">{businessClassPrice} €</span>
                   </div>
                 </div>
               </div>
