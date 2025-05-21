@@ -23,22 +23,24 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-sm z-50 shadow-sm">
       <div className="container mx-auto px-4 py-3 md:py-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center">
-            <img 
-              src="/lovable-uploads/66b71363-7db2-4887-b262-3ce32cfd76dd.png" 
-              alt="Altura Voyages Logo" 
-              className="h-16 md:h-20 mr-3" 
-            />
-            <span className="font-display text-2xl font-bold text-altura">ALTURA VOYAGES</span>
-          </Link>
+          <div className="flex items-center">
+            <Link to="/" className="flex items-center">
+              <img 
+                src="/lovable-uploads/66b71363-7db2-4887-b262-3ce32cfd76dd.png" 
+                alt="Altura Voyages Logo" 
+                className="h-16 md:h-20 mr-3" 
+              />
+              <span className="font-display text-2xl font-bold text-altura">ALTURA VOYAGES</span>
+            </Link>
+          </div>
           
           {/* Menu desktop */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-4 flex-nowrap">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-altura ${
+                className={`text-sm font-medium whitespace-nowrap transition-colors hover:text-altura ${
                   isActive(link.path) ? 'text-altura border-b-2 border-altura' : 'text-gray-600'
                 }`}
               >
