@@ -1,3 +1,4 @@
+
 import { FC } from "react";
 import { Button } from "@/components/ui/button";
 import { MessageSquare } from "lucide-react";
@@ -50,7 +51,7 @@ export const DestinationSidebar: FC<DestinationSidebarProps> = ({
               : "border-gray-300 hover:border-altura/50"}`}
             onClick={() => onClassChange("economy")}
           >
-            <div className="font-bold text-black text-base">Classe Économique</div>
+            <div className="font-bold text-black text-base whitespace-nowrap">Classe Économique</div>
             <div className="text-2xl font-bold text-black mt-1">{price} €</div>
           </div>
           
