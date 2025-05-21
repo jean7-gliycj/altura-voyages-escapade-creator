@@ -9,3 +9,16 @@ export interface Destination {
   theme: string;
   description: string;
 }
+
+export interface Offer {
+  id: string;
+  title: string;
+  image: string;
+  originalPrice: number;
+  discountedPrice: number;
+  duration: string;
+  description: string;
+  details?: string[];
+  inclusions?: string[];
+  exclusions?: string[];
+}

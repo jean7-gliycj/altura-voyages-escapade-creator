@@ -1,3 +1,4 @@
+
 import { Destination } from "@/types";
 
 export const destinations: Destination[] = [
@@ -150,5 +151,136 @@ export const destinations: Destination[] = [
     price: 620,
     theme: "Ville",
     description: "Découvrez la ville vibrante de Barcelone, avec son architecture unique de Gaudí, ses plages urbaines et sa cuisine délicieuse."
+  },
+  // Ajout de nouvelles destinations
+  {
+    id: "kyoto",
+    name: "Kyoto",
+    image: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Japon",
+    continent: "Asie",
+    price: 1390,
+    theme: "Culture",
+    description: "Plongez dans l'histoire et la culture japonaise traditionnelle avec les temples séculaires, les jardins zen et les sanctuaires de Kyoto."
+  },
+  {
+    id: "hawaii",
+    name: "Hawaii",
+    image: "https://images.unsplash.com/photo-1542259009477-d625272157b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "États-Unis",
+    continent: "Océanie",
+    price: 1980,
+    theme: "Plage",
+    description: "Profitez du paradis sur terre avec les plages volcaniques, les forêts tropicales et la culture polynésienne unique d'Hawaii."
+  },
+  {
+    id: "istanbul",
+    name: "Istanbul",
+    image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Turquie",
+    continent: "Europe",
+    price: 720,
+    theme: "Culture",
+    description: "Découvrez la ville où l'Europe rencontre l'Asie, avec ses mosquées majestueuses, ses bazars animés et sa cuisine délicieuse."
+  },
+  {
+    id: "seychelles",
+    name: "Seychelles",
+    image: "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Seychelles",
+    continent: "Afrique",
+    price: 2100,
+    theme: "Plage",
+    description: "Explorez le paradis tropical des Seychelles avec ses plages idylliques, ses formations rocheuses uniques et sa biodiversité incroyable."
+  },
+  {
+    id: "rome",
+    name: "Rome",
+    image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Italie",
+    continent: "Europe",
+    price: 650,
+    theme: "Culture",
+    description: "Plongez dans l'histoire millénaire de la Ville Éternelle, avec ses ruines antiques, ses chefs-d'œuvre artistiques et sa dolce vita."
+  },
+  {
+    id: "tahiti",
+    name: "Tahiti",
+    image: "https://images.unsplash.com/photo-1566288623394-377af472d81b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Polynésie Française",
+    continent: "Océanie",
+    price: 2300,
+    theme: "Plage",
+    description: "Vivez l'expérience ultime du luxe tropical avec les bungalows sur pilotis, les lagons turquoise et les couchers de soleil spectaculaires de Tahiti."
+  },
+  {
+    id: "petra",
+    name: "Pétra",
+    image: "https://images.unsplash.com/photo-1563177682-6684679c86b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Jordanie",
+    continent: "Asie",
+    price: 890,
+    theme: "Culture",
+    description: "Explorez la cité antique de Pétra, sculptée dans la roche rose, et découvrez l'un des sites archéologiques les plus impressionnants du monde."
+  },
+  {
+    id: "antarctique",
+    name: "Antarctique",
+    image: "https://images.unsplash.com/photo-1531594652722-322db808d2fe?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Antarctique",
+    continent: "Antarctique",
+    price: 8500,
+    theme: "Nature",
+    description: "Partez pour une expédition extraordinaire vers le continent le plus austral et découvrez des paysages glaciaires à couper le souffle et une faune unique."
+  },
+  {
+    id: "machu-picchu",
+    name: "Machu Picchu",
+    image: "https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Pérou",
+    continent: "Amérique",
+    price: 1450,
+    theme: "Culture",
+    description: "Découvrez la cité perdue des Incas nichée dans les Andes péruviennes, l'un des sites archéologiques les plus fascinants du monde."
+  },
+  {
+    id: "london",
+    name: "Londres",
+    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Royaume-Uni",
+    continent: "Europe",
+    price: 680,
+    theme: "Ville",
+    description: "Explorez la capitale britannique avec ses monuments historiques, ses musées de classe mondiale et sa scène culturelle dynamique."
+  },
+  {
+    id: "grand-canyon",
+    name: "Grand Canyon",
+    image: "https://images.unsplash.com/photo-1615551043360-33de8b5f410c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "États-Unis",
+    continent: "Amérique",
+    price: 1200,
+    theme: "Nature",
+    description: "Contemplez l'une des merveilles naturelles les plus impressionnantes du monde, avec ses vastes paysages et ses formations géologiques spectaculaires."
+  },
+  {
+    id: "capetown",
+    name: "Le Cap",
+    image: "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Afrique du Sud",
+    continent: "Afrique",
+    price: 1150,
+    theme: "Ville",
+    description: "Découvrez la ville du Cap, avec sa montagne de la Table emblématique, ses vignobles, ses plages et sa diversité culturelle."
+  },
+  {
+    id: "aurora-borealis",
+    name: "Aurores Boréales",
+    image: "https://images.unsplash.com/photo-1483347756197-71ef80e95f73?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    country: "Norvège",
+    continent: "Europe",
+    price: 1680,
+    theme: "Nature",
+    description: "Assistez au spectacle magique des aurores boréales dans le ciel arctique, une expérience inoubliable au cœur de paysages hivernaux enchanteurs."
   }
 ];
