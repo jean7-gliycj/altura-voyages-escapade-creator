@@ -51,51 +51,51 @@ const Contact = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Informations de contact */}
-          <div className="lg:col-span-1">
-            <h2 className="font-display text-2xl font-bold mb-6 text-gray-800">Nos coordonnées</h2>
+          <div className="lg:col-span-1 bg-black/80 p-6 rounded-lg border border-altura/20">
+            <h2 className="font-display text-2xl font-bold mb-6 text-white">Nos coordonnées</h2>
             
             <div className="space-y-6">
               <div className="flex items-start">
                 <MapPin className="h-6 w-6 text-altura mr-3 shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-medium mb-1">Adresse</h3>
-                  <p className="text-gray-600">123 Rue du Voyage<br />75001 Paris, France</p>
+                  <h3 className="font-medium mb-1 text-white">Adresse</h3>
+                  <p className="text-white">123 Rue du Voyage<br />75001 Paris, France</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <MessageSquare className="h-6 w-6 text-altura mr-3 shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-medium mb-1">WhatsApp</h3>
+                  <h3 className="font-medium mb-1 text-white">WhatsApp</h3>
                   <a 
                     href="https://wa.me/33745913946" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="text-gray-600 hover:text-altura transition-colors"
+                    className="text-white hover:text-altura transition-colors"
                   >
                     +33 7 45 91 39 46
                   </a>
-                  <p className="text-sm text-gray-500 mt-1">Disponible 7j/7 de 9h à 19h</p>
+                  <p className="text-sm text-gray-300 mt-1">Disponible 7j/7 de 9h à 19h</p>
                 </div>
               </div>
               
               <div className="flex items-start">
                 <Mail className="h-6 w-6 text-altura mr-3 shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-medium mb-1">Email</h3>
-                  <a href="mailto:alturavoyages@gmail.com" className="text-gray-600 hover:text-altura">
+                  <h3 className="font-medium mb-1 text-white">Email</h3>
+                  <a href="mailto:alturavoyages@gmail.com" className="text-white hover:text-altura">
                     alturavoyages@gmail.com
                   </a>
-                  <p className="text-sm text-gray-500 mt-1">Réponse sous 24h</p>
+                  <p className="text-sm text-gray-300 mt-1">Réponse sous 24h</p>
                 </div>
               </div>
             </div>
             
             <div className="mt-8">
-              <h3 className="font-medium mb-3">Horaires d'ouverture</h3>
-              <p className="text-gray-600 mb-2">Lundi - Vendredi: 9h - 19h</p>
-              <p className="text-gray-600 mb-2">Samedi: 10h - 17h</p>
-              <p className="text-gray-600">Dimanche: Fermé</p>
+              <h3 className="font-medium mb-3 text-white">Horaires d'ouverture</h3>
+              <p className="text-white mb-2">Lundi - Vendredi: 9h - 19h</p>
+              <p className="text-white mb-2">Samedi: 10h - 17h</p>
+              <p className="text-white">Dimanche: Fermé</p>
             </div>
           </div>
           

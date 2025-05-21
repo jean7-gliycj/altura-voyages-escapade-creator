@@ -14,9 +14,9 @@ const Offers = () => {
         buttonLink="/reservation"
       />
       
-      <div className="container mx-auto px-4 py-16">
-        <h2 className="font-display text-3xl font-bold mb-4 text-gray-800">Promotions et circuits</h2>
-        <p className="text-gray-600 max-w-3xl mb-10">
+      <div className="container mx-auto px-4 py-16 text-white">
+        <h2 className="font-display text-3xl font-bold mb-4 text-white">Promotions et circuits</h2>
+        <p className="text-white max-w-3xl mb-10">
           Découvrez notre sélection d'offres exceptionnelles soigneusement conçues par nos experts pour vous offrir le meilleur rapport qualité-prix. Ces offres à durée limitée sont régulièrement mises à jour pour vous proposer les destinations les plus attrayantes du moment.
         </p>
         
@@ -36,29 +36,29 @@ const Offers = () => {
         </div>
         
         {/* Section d'information supplémentaire */}
-        <div className="mt-16 bg-gray-50 p-8 rounded-lg">
-          <h3 className="font-display text-2xl font-bold mb-4 text-gray-800">Pourquoi réserver avec ALTURA VOYAGES ?</h3>
+        <div className="mt-16 bg-black/40 p-8 rounded-lg border border-altura/20">
+          <h3 className="font-display text-2xl font-bold mb-4 text-white">Pourquoi réserver avec ALTURA VOYAGES ?</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h4 className="font-semibold text-lg mb-2 text-gray-700">Des offres exclusives</h4>
-              <p className="text-gray-600 mb-4">
+              <h4 className="font-semibold text-lg mb-2 text-altura">Des offres exclusives</h4>
+              <p className="text-white mb-4">
                 Nos partenariats privilégiés avec les compagnies aériennes, hôtels et prestataires locaux nous permettent de vous proposer des tarifs exclusifs que vous ne trouverez nulle part ailleurs.
               </p>
               
-              <h4 className="font-semibold text-lg mb-2 text-gray-700">Flexibilité et personnalisation</h4>
-              <p className="text-gray-600">
+              <h4 className="font-semibold text-lg mb-2 text-altura">Flexibilité et personnalisation</h4>
+              <p className="text-white">
                 Même nos offres promotionnelles peuvent être adaptées selon vos préférences. Notre équipe est à votre disposition pour ajuster votre itinéraire, la durée de votre séjour ou ajouter des services complémentaires.
               </p>
             </div>
             
             <div>
-              <h4 className="font-semibold text-lg mb-2 text-gray-700">Garantie du meilleur prix</h4>
-              <p className="text-gray-600 mb-4">
+              <h4 className="font-semibold text-lg mb-2 text-altura">Garantie du meilleur prix</h4>
+              <p className="text-white mb-4">
                 Si vous trouvez une offre identique moins chère ailleurs dans les 24h suivant votre réservation, nous nous engageons à vous rembourser la différence.
               </p>
               
-              <h4 className="font-semibold text-lg mb-2 text-gray-700">Paiement sécurisé et facilité</h4>
-              <p className="text-gray-600">
+              <h4 className="font-semibold text-lg mb-2 text-altura">Paiement sécurisé et facilité</h4>
+              <p className="text-white">
                 Profitez de nos options de paiement en plusieurs fois sans frais et de la sécurité de nos transactions en ligne certifiées.
               </p>
             </div>
