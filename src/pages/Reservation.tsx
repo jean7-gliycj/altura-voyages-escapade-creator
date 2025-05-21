@@ -241,7 +241,7 @@ const Reservation = () => {
                   Envoyer ma demande
                 </Button>
                 
-                <p className="mt-4 text-sm text-gray-600">
+                <p className="mt-4 text-sm text-black">
                   En soumettant ce formulaire, vous acceptez d'être contacté par notre équipe pour finaliser votre réservation.
                 </p>
               </div>

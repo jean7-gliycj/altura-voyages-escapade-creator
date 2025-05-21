@@ -103,7 +103,7 @@ const OfferDetail = () => {
           {/* Sidebar */}
           <div className="bg-gray-50 rounded-lg p-6 h-fit">
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-3">Choisissez votre classe de voyage</h3>
+              <h3 className="text-lg font-semibold mb-3 text-black">Choisissez votre classe de voyage</h3>
               
               {/* Class selection */}
               <div className="grid grid-cols-2 gap-3 mb-4">
@@ -113,7 +113,7 @@ const OfferDetail = () => {
                     : "border-gray-300"}`}
                   onClick={() => setSelectedClass("economy")}
                 >
-                  <div className="font-medium">Classe Économique</div>
+                  <div className="font-medium text-black">Classe Économique</div>
                   <div className="flex justify-between items-center mt-1">
                     <span className="text-sm text-gray-500 line-through">{offer.originalPrice} €</span>
                     <span className="text-lg font-bold text-altura">{offer.discountedPrice} €</span>
@@ -134,7 +134,7 @@ const OfferDetail = () => {
                 </div>
               </div>
               
-              <p className="text-sm text-gray-500">Prix pour {offer.duration}</p>
+              <p className="text-sm text-black">Prix pour {offer.duration}</p>
             </div>
             
             <Button 
