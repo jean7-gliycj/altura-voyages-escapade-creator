@@ -11,33 +11,6 @@ const About = () => {
         </div>
       </div>
       
-      {/* Notre histoire */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row gap-10 items-center">
-            <div className="md:w-1/2">
-              <h2 className="font-display text-3xl font-bold mb-6 text-gray-800">Notre histoire</h2>
-              <p className="text-gray-600 mb-4">
-                ALTURA VOYAGES a été fondée en 2010 à Paris par Mohamed Karim, un passionné de voyages qui, après 15 ans d'expérience dans le tourisme international, a décidé de créer sa propre agence spécialisée dans les voyages personnalisés.
-              </p>
-              <p className="text-gray-600 mb-4">
-                Au départ modeste avec seulement 3 collaborateurs dans un petit bureau du 11ème arrondissement, notre agence s'est rapidement distinguée par son approche attentionnée et son expertise des destinations les plus prisées du Moyen-Orient et de l'Asie.
-              </p>
-              <p className="text-gray-600">
-                Aujourd'hui, ALTURA VOYAGES compte une équipe de 15 experts voyageurs basés à Paris et Dubaï, chacun spécialisé dans des régions spécifiques du globe pour vous garantir des conseils avisés et des services sur mesure exceptionnels.
-              </p>
-            </div>
-            <div className="md:w-1/2">
-              <img 
-                src="https://images.unsplash.com/photo-1512552288940-3a300922a275?auto=format&fit=crop&w=800" 
-                alt="Bureau ALTURA VOYAGES"
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      
       {/* Notre mission */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
