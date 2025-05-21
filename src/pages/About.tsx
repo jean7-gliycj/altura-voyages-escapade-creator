@@ -118,12 +118,12 @@ const About = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://randomuser.me/api/portraits/men/40.jpg" 
-                alt="Pierre Dupont" 
+                src="/lovable-uploads/6858dc5d-14cd-4273-a2c3-f3d01e5e5dc0.png" 
+                alt="Alexandre Martin" 
                 className="w-full h-64 object-cover object-center"
               />
               <div className="p-4 text-center">
-                <h3 className="font-medium text-lg mb-1">Pierre Dupont</h3>
+                <h3 className="font-medium text-lg mb-1">Alexandre Martin</h3>
                 <p className="text-gray-600 mb-2">Co-fondateur</p>
                 <p className="text-sm text-gray-500">Expert Asie</p>
               </div>
@@ -131,12 +131,12 @@ const About = () => {
             
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://randomuser.me/api/portraits/women/65.jpg" 
-                alt="Marie Laurent" 
+                src="/lovable-uploads/6f84144e-868c-4037-b18e-9b86ee9ace8a.png" 
+                alt="Clara Ndiaye" 
                 className="w-full h-64 object-cover object-center"
               />
               <div className="p-4 text-center">
-                <h3 className="font-medium text-lg mb-1">Marie Laurent</h3>
+                <h3 className="font-medium text-lg mb-1">Clara Ndiaye</h3>
                 <p className="text-gray-600 mb-2">Co-fondatrice</p>
                 <p className="text-sm text-gray-500">Experte Afrique</p>
               </div>
@@ -144,27 +144,40 @@ const About = () => {
             
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://randomuser.me/api/portraits/men/22.jpg" 
-                alt="Thomas Martin" 
+                src="/lovable-uploads/740ba02f-caa3-4476-8bcd-86102161aab1.png" 
+                alt="Mei Lin" 
                 className="w-full h-64 object-cover object-center"
               />
               <div className="p-4 text-center">
-                <h3 className="font-medium text-lg mb-1">Thomas Martin</h3>
-                <p className="text-gray-600 mb-2">Directeur des opérations</p>
-                <p className="text-sm text-gray-500">Expert Amérique</p>
+                <h3 className="font-medium text-lg mb-1">Mei Lin</h3>
+                <p className="text-gray-600 mb-2">Directrice des opérations</p>
+                <p className="text-sm text-gray-500">Experte Asie du Sud-Est</p>
               </div>
             </div>
             
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
               <img 
-                src="https://randomuser.me/api/portraits/women/33.jpg" 
-                alt="Sophie Dubois" 
+                src="/lovable-uploads/667bd6f8-f9ec-4c4d-9f73-07de0832daf9.png" 
+                alt="Carlos Ramirez" 
                 className="w-full h-64 object-cover object-center"
               />
               <div className="p-4 text-center">
-                <h3 className="font-medium text-lg mb-1">Sophie Dubois</h3>
+                <h3 className="font-medium text-lg mb-1">Carlos Ramirez</h3>
                 <p className="text-gray-600 mb-2">Responsable clientèle</p>
-                <p className="text-sm text-gray-500">Experte Europe</p>
+                <p className="text-sm text-gray-500">Expert Amérique Latine</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg overflow-hidden shadow-md">
+              <img 
+                src="/lovable-uploads/8c373c70-f138-4419-9e2f-dadd4117889d.png" 
+                alt="David Laurent" 
+                className="w-full h-64 object-cover object-center"
+              />
+              <div className="p-4 text-center">
+                <h3 className="font-medium text-lg mb-1">David Laurent</h3>
+                <p className="text-gray-600 mb-2">Expert voyages d'aventure</p>
+                <p className="text-sm text-gray-500">Spécialiste Europe et Océanie</p>
               </div>
             </div>
           </div>
