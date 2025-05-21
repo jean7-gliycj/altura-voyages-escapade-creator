@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { destinations } from "@/data/destinations";
 import { Button } from "@/components/ui/button";
-import { WhatsApp } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const DestinationDetail = () => {
@@ -155,7 +155,7 @@ const DestinationDetail = () => {
               className="w-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2 py-6 mb-4"
               onClick={handleWhatsAppClick}
             >
-              <WhatsApp size={20} />
+              <MessageSquare size={20} />
               Discuter de cette offre
             </Button>
             
