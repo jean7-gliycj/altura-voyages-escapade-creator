@@ -1,3 +1,4 @@
+
 import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { destinations } from "@/data/destinations";
@@ -43,7 +44,7 @@ const DestinationDetail = () => {
     return (
       <div className="min-h-screen pt-20 pb-16 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold mb-4 text-black">Destination non trouvée</h1>
+          <h1 className="text-2xl font-bold mb-4 text-white">Destination non trouvée</h1>
           <Link to="/destinations">
             <Button>Retour aux destinations</Button>
           </Link>
@@ -80,12 +81,12 @@ const DestinationDetail = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main content */}
           <div className="lg:col-span-2">
-            <h2 className="font-display text-2xl font-semibold mb-6 text-black">À propos de {destination.name}</h2>
-            <p className="text-lg mb-6 text-black">{destination.description}</p>
+            <h2 className="font-display text-2xl font-semibold mb-6 text-white">À propos de {destination.name}</h2>
+            <p className="text-lg mb-6 text-white">{destination.description}</p>
             
             <div className="mb-8">
-              <h3 className="font-display text-xl font-semibold mb-4 text-black">Pourquoi visiter {destination.name} ?</h3>
-              <ul className="list-disc pl-5 space-y-2 text-black">
+              <h3 className="font-display text-xl font-semibold mb-4 text-white">Pourquoi visiter {destination.name} ?</h3>
+              <ul className="list-disc pl-5 space-y-2 text-white">
                 <li>Découvrez des paysages à couper le souffle</li>
                 <li>Immergez-vous dans une culture fascinante</li>
                 <li>Savourez une gastronomie locale exceptionnelle</li>
@@ -95,23 +96,23 @@ const DestinationDetail = () => {
             </div>
             
             <div>
-              <h3 className="font-display text-xl font-semibold mb-4 text-black">Activités populaires</h3>
+              <h3 className="font-display text-xl font-semibold mb-4 text-white">Activités populaires</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="border border-gray-200 rounded-md p-4">
-                  <h4 className="font-semibold mb-1 text-black">Explorer</h4>
-                  <p className="text-black">Découvrez des sites historiques et naturels uniques.</p>
+                  <h4 className="font-semibold mb-1 text-white">Explorer</h4>
+                  <p className="text-white">Découvrez des sites historiques et naturels uniques.</p>
                 </div>
                 <div className="border border-gray-200 rounded-md p-4">
-                  <h4 className="font-semibold mb-1 text-black">Se détendre</h4>
-                  <p className="text-black">Profitez de moments de relaxation parfaits.</p>
+                  <h4 className="font-semibold mb-1 text-white">Se détendre</h4>
+                  <p className="text-white">Profitez de moments de relaxation parfaits.</p>
                 </div>
                 <div className="border border-gray-200 rounded-md p-4">
-                  <h4 className="font-semibold mb-1 text-black">Déguster</h4>
-                  <p className="text-black">Savourez la cuisine locale et ses saveurs.</p>
+                  <h4 className="font-semibold mb-1 text-white">Déguster</h4>
+                  <p className="text-white">Savourez la cuisine locale et ses saveurs.</p>
                 </div>
                 <div className="border border-gray-200 rounded-md p-4">
-                  <h4 className="font-semibold mb-1 text-black">S'amuser</h4>
-                  <p className="text-black">Participez à des activités divertissantes pour tous.</p>
+                  <h4 className="font-semibold mb-1 text-white">S'amuser</h4>
+                  <p className="text-white">Participez à des activités divertissantes pour tous.</p>
                 </div>
               </div>
             </div>
