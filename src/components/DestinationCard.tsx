@@ -21,7 +21,7 @@ const DestinationCard = ({ id, name, image, country, continent, price, theme }: 
             alt={name} 
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
-          <div className="absolute top-3 right-3 bg-white/90 px-2 py-1 rounded text-xs font-medium text-altura">
+          <div className="absolute top-3 right-3 bg-white/90 px-2 py-1 rounded text-xs font-medium text-black">
             {theme}
           </div>
         </div>

@@ -131,7 +131,7 @@ const DestinationDetail = () => {
                     : "border-gray-300"}`}
                   onClick={() => setSelectedClass("economy")}
                 >
-                  <div className="font-medium text-black">Classe Économique</div>
+                  <div className="font-semibold text-black">Classe Économique</div>
                   <div className="text-2xl font-bold text-black mt-1">{destination.price} €</div>
                 </div>
                 
@@ -141,12 +141,12 @@ const DestinationDetail = () => {
                     : "border-gray-300"}`}
                   onClick={() => setSelectedClass("business")}
                 >
-                  <div className="font-medium text-black">Classe Affaire</div>
+                  <div className="font-semibold text-black">Classe Affaire</div>
                   <div className="text-2xl font-bold text-black mt-1">{businessClassPrice} €</div>
                 </div>
               </div>
               
-              <p className="text-sm text-black">Par personne, vols inclus</p>
+              <p className="text-sm font-medium text-black">Par personne, vols inclus</p>
             </div>
             
             <div className="mb-6">
