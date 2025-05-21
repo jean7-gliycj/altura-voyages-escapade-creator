@@ -21,20 +21,20 @@ const HeroSection = ({
     <div 
       className="relative h-screen min-h-[600px] w-full bg-cover bg-center bg-no-repeat flex items-center"
       style={{ 
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${backgroundImage})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${backgroundImage})`,
         backgroundPosition: 'center 30%',
       }}
     >
       <div className="container mx-auto px-4">
         <div className="max-w-2xl text-white">
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight animate-fadeIn">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight animate-fadeIn text-white">
             {title}
           </h1>
           <p className="text-lg md:text-xl mb-8 text-white/90 animate-fadeIn">
             {subtitle}
           </p>
           <Link to={buttonLink}>
-            <Button className="bg-altura hover:bg-altura-light text-white font-medium px-6 py-2 rounded-md text-lg">
+            <Button className="bg-altura hover:bg-altura-light text-black font-medium px-6 py-2 rounded-md text-lg">
               {buttonText}
             </Button>
           </Link>

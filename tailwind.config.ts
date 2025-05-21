@@ -54,10 +54,10 @@ export default {
 					foreground: 'hsl(var(--card-foreground))'
 				},
 				altura: {
-					DEFAULT: '#075985', // Bleu principal
-					light: '#0EA5E9', // Bleu clair
-					dark: '#0C4A6E', // Bleu foncé
-					accent: '#06B6D4', // Turquoise accent
+					DEFAULT: '#D4AF37', // Gold color
+					light: '#F5D76E', // Light gold
+					dark: '#996515', // Dark gold
+					accent: '#FFD700', // Gold accent
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
