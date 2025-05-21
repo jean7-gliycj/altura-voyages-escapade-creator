@@ -21,16 +21,16 @@ const DestinationCard = ({ id, name, image, country, continent, price, theme }: 
             alt={name} 
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
-          <div className="absolute top-3 right-3 bg-white/90 px-2 py-1 rounded text-xs font-medium text-black">
+          <div className="absolute top-3 right-3 bg-white/90 px-2 py-1 rounded text-xs font-bold text-black">
             {theme}
           </div>
         </div>
         <div className="p-4">
           <div className="flex justify-between items-start mb-2">
             <h3 className="font-display text-lg font-semibold text-black">{name}</h3>
-            <span className="text-sm font-medium text-green-600">{price} €</span>
+            <span className="text-sm font-bold text-green-600">{price} €</span>
           </div>
-          <div className="flex items-center text-sm text-black">
+          <div className="flex items-center text-sm text-black font-medium">
             <span>{country}</span>
             <span className="mx-2">•</span>
             <span>{continent}</span>

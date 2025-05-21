@@ -1,4 +1,3 @@
-
 import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { destinations } from "@/data/destinations";
@@ -119,38 +118,38 @@ const DestinationDetail = () => {
           </div>
           
           {/* Sidebar */}
-          <div className="bg-gray-50 rounded-lg p-6 h-fit">
+          <div className="bg-gray-50 rounded-lg p-6 h-fit shadow-md">
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-3 text-black">Choisissez votre classe de voyage</h3>
+              <h3 className="text-xl font-bold mb-3 text-black">Choisissez votre classe de voyage</h3>
               
               {/* Class selection */}
               <div className="grid grid-cols-2 gap-3 mb-4">
                 <div 
                   className={`border rounded-lg p-3 cursor-pointer ${selectedClass === "economy" 
                     ? "border-altura bg-altura/10" 
-                    : "border-gray-300"}`}
+                    : "border-gray-300 hover:border-altura/50"}`}
                   onClick={() => setSelectedClass("economy")}
                 >
-                  <div className="font-semibold text-black">Classe Économique</div>
+                  <div className="font-bold text-black text-base">Classe Économique</div>
                   <div className="text-2xl font-bold text-black mt-1">{destination.price} €</div>
                 </div>
                 
                 <div 
                   className={`border rounded-lg p-3 cursor-pointer ${selectedClass === "business" 
                     ? "border-altura bg-altura/10" 
-                    : "border-gray-300"}`}
+                    : "border-gray-300 hover:border-altura/50"}`}
                   onClick={() => setSelectedClass("business")}
                 >
-                  <div className="font-semibold text-black">Classe Affaire</div>
+                  <div className="font-bold text-black text-base">Classe Affaire</div>
                   <div className="text-2xl font-bold text-black mt-1">{businessClassPrice} €</div>
                 </div>
               </div>
               
-              <p className="text-sm font-medium text-black">Par personne, vols inclus</p>
+              <p className="text-sm font-bold text-black">Par personne, vols inclus</p>
             </div>
             
             <div className="mb-6">
-              <h3 className="font-semibold mb-2 text-black">Inclus dans le prix :</h3>
+              <h3 className="font-bold mb-2 text-black">Inclus dans le prix :</h3>
               <ul className="space-y-1">
                 <li className="flex items-center text-sm text-black">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -188,7 +187,7 @@ const DestinationDetail = () => {
             </Button>
             
             <Link to="/reservation">
-              <Button className="w-full bg-altura hover:bg-altura-light text-black">
+              <Button className="w-full bg-altura hover:bg-altura-light text-black font-bold">
                 Réserver maintenant
               </Button>
             </Link>
