@@ -185,13 +185,13 @@ const Index = () => {
           
           <div className="bg-black/50 p-4 rounded-lg border border-altura/20 mb-6 flex items-center justify-center">
             <MapPin className="text-altura mr-2" />
-            <p className="text-white">123 Rue du Voyage, 75001 Paris, France</p>
+            <p className="text-white">25 Avenue Jean Médecin, 06000 Nice, France</p>
           </div>
           
           <div className="relative w-full h-96 rounded-lg overflow-hidden">
             <iframe 
               title="Google Maps" 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.3417314!3d48.8583701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDUxJzMwLjciTiAywrAyMCczMC4yIkU!5e0!3m2!1sfr!2sfr!4v1652956539318!5m2!1sfr!2sfr" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.182578381436!2d7.268319415355668!3d43.702348679119535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cddaa63711aed5%3A0xbec7848377ae4c86!2sAvenue%20Jean%20M%C3%A9decin%2C%2006000%20Nice%2C%20France!5e0!3m2!1sfr!2sfr!4v1716301679196!5m2!1sfr!2sfr" 
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 

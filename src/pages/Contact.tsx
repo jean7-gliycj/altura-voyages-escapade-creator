@@ -59,7 +59,7 @@ const Contact = () => {
                 <MapPin className="h-6 w-6 text-altura mr-3 shrink-0 mt-1" />
                 <div>
                   <h3 className="font-medium mb-1 text-white">Adresse</h3>
-                  <p className="text-white">123 Rue du Voyage<br />75001 Paris, France</p>
+                  <p className="text-white">25 Avenue Jean Médecin<br />06000 Nice, France</p>
                 </div>
               </div>
               

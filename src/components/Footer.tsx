@@ -85,7 +85,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start">
                 <MapPin className="mr-2 h-5 w-5 text-altura shrink-0" />
-                <span>123 Rue du Voyage, 75001 Paris, France</span>
+                <span>25 Avenue Jean Médecin, 06000 Nice, France</span>
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 h-5 w-5 text-altura shrink-0" />
