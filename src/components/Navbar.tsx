@@ -24,6 +24,11 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3 md:py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/66b71363-7db2-4887-b262-3ce32cfd76dd.png" 
+              alt="Altura Voyages Logo" 
+              className="h-12 mr-3" 
+            />
             <span className="font-display text-2xl font-bold text-altura">ALTURA VOYAGES</span>
           </Link>
           

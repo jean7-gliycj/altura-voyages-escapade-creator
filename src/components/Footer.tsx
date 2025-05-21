@@ -10,7 +10,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Colonne 1 */}
           <div>
-            <h3 className="font-display text-xl font-semibold mb-4 text-altura">ALTURA VOYAGES</h3>
+            <div className="flex items-center mb-4">
+              <img 
+                src="/lovable-uploads/66b71363-7db2-4887-b262-3ce32cfd76dd.png" 
+                alt="Altura Voyages Logo" 
+                className="h-14 mr-3" 
+              />
+              <h3 className="font-display text-xl font-semibold text-altura">ALTURA VOYAGES</h3>
+            </div>
             <p className="text-sm mb-4">
               Votre partenaire de confiance pour des voyages inoubliables à travers le monde.
               Des expériences authentiques, des destinations de rêve et un service personnalisé.
