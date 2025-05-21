@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useRef } from 'react';
 import { 
   Carousel,
@@ -9,7 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Percent, Airplane } from 'lucide-react';
+import { Percent, Plane } from 'lucide-react';
 
 const offerSlides = [
   {
@@ -163,7 +162,7 @@ const OffersCarousel = () => {
                           <div className="flex items-center bg-red-600 text-white px-3 py-1 rounded-full animate-pulse">
                             <Percent className="h-4 w-4 mr-1" />
                             <span className="font-bold">-40%</span>
-                            <Airplane className="h-4 w-4 mx-1" />
+                            <Plane className="h-4 w-4 mx-1" />
                             <span className="text-sm">sur les vols</span>
                           </div>
                         )}
