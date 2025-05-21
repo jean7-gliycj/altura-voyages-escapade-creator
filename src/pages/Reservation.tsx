@@ -34,7 +34,7 @@ const Reservation = () => {
       const whatsappMessage = `*Nouvelle réservation*\n\n*Nom:* ${formData.firstName} ${formData.lastName}\n*Email:* ${formData.email}\n*Téléphone:* ${formData.phone}\n*Destination:* ${formData.destination}\n*Date départ:* ${formData.departureDate}\n*Date retour:* ${formData.returnDate}\n*Adultes:* ${formData.adults}\n*Enfants:* ${formData.children}\n*Message:* ${formData.message}`;
       
       // Open WhatsApp link in a new tab
-      const whatsappUrl = getWhatsAppLink("+33123456789", whatsappMessage);
+      const whatsappUrl = getWhatsAppLink("+33745913946", whatsappMessage);
       window.open(whatsappUrl, "_blank");
       
       // Also send via email using mailto
@@ -84,11 +84,11 @@ const Reservation = () => {
       
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-secondary rounded-lg shadow-lg p-6 md:p-8 border border-altura/20">
+          <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 border border-altura/20">
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-white mb-1">Prénom *</label>
+                  <label htmlFor="firstName" className="block text-sm font-medium text-black mb-1">Prénom *</label>
                   <input
                     required
                     type="text"
@@ -96,12 +96,12 @@ const Reservation = () => {
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleChange}
-                    className="w-full p-2 border border-altura/50 bg-black text-white rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                    className="w-full p-2 border border-gray-300 bg-white text-black rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-white mb-1">Nom *</label>
+                  <label htmlFor="lastName" className="block text-sm font-medium text-black mb-1">Nom *</label>
                   <input
                     required
                     type="text"
@@ -109,12 +109,12 @@ const Reservation = () => {
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleChange}
-                    className="w-full p-2 border border-altura/50 bg-black text-white rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                    className="w-full p-2 border border-gray-300 bg-white text-black rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-white mb-1">Email *</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-black mb-1">Email *</label>
                   <input
                     required
                     type="email"
@@ -122,12 +122,12 @@ const Reservation = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full p-2 border border-altura/50 bg-black text-white rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                    className="w-full p-2 border border-gray-300 bg-white text-black rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-white mb-1">Téléphone *</label>
+                  <label htmlFor="phone" className="block text-sm font-medium text-black mb-1">Téléphone *</label>
                   <input
                     required
                     type="tel"
@@ -135,7 +135,7 @@ const Reservation = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full p-2 border border-altura/50 bg-black text-white rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                    className="w-full p-2 border border-gray-300 bg-white text-black rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
                   />
                 </div>
               </div>
@@ -144,14 +144,14 @@ const Reservation = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div>
-                  <label htmlFor="destination" className="block text-sm font-medium text-white mb-1">Destination *</label>
+                  <label htmlFor="destination" className="block text-sm font-medium text-black mb-1">Destination *</label>
                   <select
                     required
                     id="destination"
                     name="destination"
                     value={formData.destination}
                     onChange={handleChange}
-                    className="w-full p-2 border border-altura/50 bg-black text-white rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                    className="w-full p-2 border border-gray-300 bg-white text-black rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
                   >
                     <option value="">Sélectionnez une destination</option>
                     {destinations.map((destination) => (
@@ -164,7 +164,7 @@ const Reservation = () => {
                 </div>
                 
                 <div>
-                  <label htmlFor="departureDate" className="block text-sm font-medium text-white mb-1">Date de départ *</label>
+                  <label htmlFor="departureDate" className="block text-sm font-medium text-black mb-1">Date de départ *</label>
                   <input
                     required
                     type="date"
@@ -172,13 +172,13 @@ const Reservation = () => {
                     name="departureDate"
                     value={formData.departureDate}
                     onChange={handleChange}
-                    className="w-full p-2 border border-altura/50 bg-black text-white rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                    className="w-full p-2 border border-gray-300 bg-white text-black rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
                     min={new Date().toISOString().split('T')[0]}
                   />
                 </div>
                 
                 <div>
-                  <label htmlFor="returnDate" className="block text-sm font-medium text-white mb-1">Date de retour *</label>
+                  <label htmlFor="returnDate" className="block text-sm font-medium text-black mb-1">Date de retour *</label>
                   <input
                     required
                     type="date"
@@ -186,14 +186,14 @@ const Reservation = () => {
                     name="returnDate"
                     value={formData.returnDate}
                     onChange={handleChange}
-                    className="w-full p-2 border border-altura/50 bg-black text-white rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                    className="w-full p-2 border border-gray-300 bg-white text-black rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
                     min={formData.departureDate || new Date().toISOString().split('T')[0]}
                   />
                 </div>
                 
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="adults" className="block text-sm font-medium text-white mb-1">Adultes *</label>
+                    <label htmlFor="adults" className="block text-sm font-medium text-black mb-1">Adultes *</label>
                     <input
                       required
                       type="number"
@@ -203,12 +203,12 @@ const Reservation = () => {
                       onChange={handleChange}
                       min="1"
                       max="10"
-                      className="w-full p-2 border border-altura/50 bg-black text-white rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                      className="w-full p-2 border border-gray-300 bg-white text-black rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="children" className="block text-sm font-medium text-white mb-1">Enfants</label>
+                    <label htmlFor="children" className="block text-sm font-medium text-black mb-1">Enfants</label>
                     <input
                       type="number"
                       id="children"
@@ -217,21 +217,21 @@ const Reservation = () => {
                       onChange={handleChange}
                       min="0"
                       max="10"
-                      className="w-full p-2 border border-altura/50 bg-black text-white rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                      className="w-full p-2 border border-gray-300 bg-white text-black rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
                     />
                   </div>
                 </div>
               </div>
               
               <div className="mb-8">
-                <label htmlFor="message" className="block text-sm font-medium text-white mb-1">Message / Demandes spéciales</label>
+                <label htmlFor="message" className="block text-sm font-medium text-black mb-1">Message / Demandes spéciales</label>
                 <textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full p-2 border border-altura/50 bg-black text-white rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                  className="w-full p-2 border border-gray-300 bg-white text-black rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
                   placeholder="Précisez vos attentes, vos envies ou toute information complémentaire..."
                 />
               </div>
@@ -241,7 +241,7 @@ const Reservation = () => {
                   Envoyer ma demande
                 </Button>
                 
-                <p className="mt-4 text-sm text-gray-400">
+                <p className="mt-4 text-sm text-gray-600">
                   En soumettant ce formulaire, vous acceptez d'être contacté par notre équipe pour finaliser votre réservation.
                 </p>
               </div>

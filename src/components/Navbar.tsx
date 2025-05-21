@@ -27,7 +27,7 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/66b71363-7db2-4887-b262-3ce32cfd76dd.png" 
               alt="Altura Voyages Logo" 
-              className="h-12 mr-3" 
+              className="h-16 md:h-20 mr-3" 
             />
             <span className="font-display text-2xl font-bold text-altura">ALTURA VOYAGES</span>
           </Link>

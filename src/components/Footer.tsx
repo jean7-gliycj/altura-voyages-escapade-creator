@@ -14,7 +14,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/66b71363-7db2-4887-b262-3ce32cfd76dd.png" 
                 alt="Altura Voyages Logo" 
-                className="h-14 mr-3" 
+                className="h-20 mr-3" 
               />
               <h3 className="font-display text-xl font-semibold text-altura">ALTURA VOYAGES</h3>
             </div>
@@ -40,7 +40,7 @@ const Footer = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://wa.me/+33123456789"
+                href="https://wa.me/+33745913946"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-altura transition-colors"
@@ -95,8 +95,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Phone className="mr-2 h-5 w-5 text-altura shrink-0" />
-                <a href="tel:+33123456789" className="hover:text-altura transition-colors">
-                  +33 1 23 45 67 89
+                <a href="tel:+33745913946" className="hover:text-altura transition-colors">
+                  +33 7 45 91 39 46
                 </a>
               </li>
               <li className="flex items-center">

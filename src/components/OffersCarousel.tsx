@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { 
   Carousel,
   CarouselContent,
@@ -54,22 +54,53 @@ const offerSlides = [
 ];
 
 const OffersCarousel = () => {
-  const [autoPlay, setAutoPlay] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const carouselApiRef = useRef<any>(null);
   
+  // Always auto-scroll, no option to stop it
   useEffect(() => {
-    let timer: number;
+    const interval = setInterval(() => {
+      if (carouselApiRef.current) {
+        carouselApiRef.current.scrollNext();
+        
+        // Update current slide indicator
+        const newIndex = (currentSlide + 1) % offerSlides.length;
+        setCurrentSlide(newIndex);
+      }
+    }, 4000); // Auto-scroll every 4 seconds
     
-    if (autoPlay) {
-      timer = window.setInterval(() => {
-        setCurrentSlide((prevSlide) => (prevSlide + 1) % offerSlides.length);
-      }, 5000);
+    return () => clearInterval(interval);
+  }, [currentSlide]);
+  
+  // Handle direct slide indicator clicks
+  const goToSlide = (index: number) => {
+    if (carouselApiRef.current && index !== currentSlide) {
+      const curr = currentSlide;
+      if (index > curr) {
+        // Need to go forward
+        const stepsForward = index - curr;
+        for (let i = 0; i < stepsForward; i++) {
+          setTimeout(() => {
+            carouselApiRef.current.scrollNext();
+          }, 50 * i);
+        }
+      } else {
+        // Need to go backward
+        const stepsBackward = curr - index;
+        for (let i = 0; i < stepsBackward; i++) {
+          setTimeout(() => {
+            carouselApiRef.current.scrollPrev();
+          }, 50 * i);
+        }
+      }
+      setCurrentSlide(index);
     }
-    
-    return () => {
-      clearInterval(timer);
-    };
-  }, [autoPlay]);
+  };
+  
+  // Store the API reference when carousel is loaded
+  const handleCarouselApi = (api: any) => {
+    carouselApiRef.current = api;
+  };
   
   return (
     <div className="relative">
@@ -79,6 +110,7 @@ const OffersCarousel = () => {
           loop: true,
         }}
         className="w-full"
+        setApi={handleCarouselApi}
       >
         <CarouselContent>
           {offerSlides.map((slide) => (
@@ -119,7 +151,7 @@ const OffersCarousel = () => {
             className={`w-3 h-3 rounded-full transition-colors ${
               index === currentSlide ? "bg-altura" : "bg-white bg-opacity-50"
             }`}
-            onClick={() => setCurrentSlide(index)}
+            onClick={() => goToSlide(index)}
           />
         ))}
       </div>

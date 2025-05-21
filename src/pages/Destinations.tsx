@@ -41,12 +41,12 @@ const Destinations = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-4 md:items-center">
             <div className="flex-1">
-              <label htmlFor="continent" className="block text-sm font-medium text-gray-700 mb-1">Continent</label>
+              <label htmlFor="continent" className="block text-sm font-medium text-altura mb-1">Continent</label>
               <select
                 id="continent"
                 value={selectedContinent}
                 onChange={(e) => setSelectedContinent(e.target.value)}
-                className="w-full p-2 border border-gray-300 rounded-md"
+                className="w-full p-2 border border-altura rounded-md text-altura"
               >
                 {continents.map((continent) => (
                   <option key={continent} value={continent}>{continent}</option>
@@ -55,12 +55,12 @@ const Destinations = () => {
             </div>
             
             <div className="flex-1">
-              <label htmlFor="theme" className="block text-sm font-medium text-gray-700 mb-1">Thème</label>
+              <label htmlFor="theme" className="block text-sm font-medium text-altura mb-1">Thème</label>
               <select
                 id="theme"
                 value={selectedTheme}
                 onChange={(e) => setSelectedTheme(e.target.value)}
-                className="w-full p-2 border border-gray-300 rounded-md"
+                className="w-full p-2 border border-altura rounded-md text-altura"
               >
                 {themes.map((theme) => (
                   <option key={theme} value={theme}>{theme}</option>

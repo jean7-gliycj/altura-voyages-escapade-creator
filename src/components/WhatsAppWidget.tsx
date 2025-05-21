@@ -4,7 +4,7 @@ import { MessageCircle } from 'lucide-react';
 
 const WhatsAppWidget = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const phoneNumber = "+33123456789"; // Replace with your actual WhatsApp number
+  const phoneNumber = "+33745913946"; // Updated WhatsApp number
   
   return (
     <>

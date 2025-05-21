@@ -32,9 +32,9 @@ const Index = () => {
   
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Hero Section */}
+      {/* Hero Section with new airport image */}
       <HeroSection
-        backgroundImage="/lovable-uploads/a61aff0e-4d3a-453c-b850-98addd49674c.png"
+        backgroundImage="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80"
         title="Découvrez le monde avec ALTURA VOYAGES"
         subtitle="Des voyages sur mesure, des expériences authentiques et des souvenirs inoubliables."
         buttonText="Découvrir nos destinations"
