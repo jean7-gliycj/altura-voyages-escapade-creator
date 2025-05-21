@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { Percent, Airplane } from 'lucide-react';
 
 const offerSlides = [
   {
@@ -17,7 +18,8 @@ const offerSlides = [
     title: '5 jours inoubliables à DUBAI',
     description: 'Réservez dès maintenant pour seulement 780€/couple ou 1130€',
     buttonText: 'Réserver maintenant',
-    buttonLink: '/reservation'
+    buttonLink: '/reservation',
+    showFlightDiscount: true
   },
   {
     id: '2',
@@ -25,7 +27,8 @@ const offerSlides = [
     title: 'Offre spéciale: 5 jours à Dubai',
     description: 'Séjour, activités et logement inclus',
     buttonText: 'Découvrir l\'offre',
-    buttonLink: '/offres'
+    buttonLink: '/offres',
+    showFlightDiscount: false
   },
   {
     id: 'zanzibar1',
@@ -33,7 +36,8 @@ const offerSlides = [
     title: 'Évasion Paradisiaque à Zanzibar',
     description: 'Profitez des plages de sable blanc et des eaux cristallines',
     buttonText: 'Découvrir Zanzibar',
-    buttonLink: '/destinations/zanzibar'
+    buttonLink: '/destinations/zanzibar',
+    showFlightDiscount: true
   },
   {
     id: 'zanzibar2',
@@ -41,7 +45,8 @@ const offerSlides = [
     title: 'Culture & Épices de Zanzibar',
     description: 'Explorez l\'île aux épices et sa riche culture',
     buttonText: 'Explorer les offres',
-    buttonLink: '/offres'
+    buttonLink: '/offres',
+    showFlightDiscount: false
   },
   {
     id: '3',
@@ -49,7 +54,8 @@ const offerSlides = [
     title: 'Magnifique Paris',
     description: 'Découvrez la ville des lumières à petit prix',
     buttonText: 'Voir les détails',
-    buttonLink: '/destinations'
+    buttonLink: '/destinations',
+    showFlightDiscount: true
   },
   {
     id: '4',
@@ -57,7 +63,8 @@ const offerSlides = [
     title: 'New York City',
     description: 'La ville qui ne dort jamais vous attend',
     buttonText: 'Explorer',
-    buttonLink: '/destinations'
+    buttonLink: '/destinations',
+    showFlightDiscount: false
   },
   {
     id: '5',
@@ -65,7 +72,8 @@ const offerSlides = [
     title: 'Tokyo',
     description: 'Découvrez le parfait mélange de traditions et modernité',
     buttonText: 'Voir l\'offre',
-    buttonLink: '/destinations'
+    buttonLink: '/destinations',
+    showFlightDiscount: true
   }
 ];
 
@@ -144,11 +152,22 @@ const OffersCarousel = () => {
                         {slide.title}
                       </h3>
                       <p className="text-white mb-4">{slide.description}</p>
-                      <Link to={slide.buttonLink}>
-                        <Button className="bg-altura hover:bg-altura-light text-black font-medium">
-                          {slide.buttonText}
-                        </Button>
-                      </Link>
+                      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+                        <Link to={slide.buttonLink}>
+                          <Button className="bg-altura hover:bg-altura-light text-black font-medium">
+                            {slide.buttonText}
+                          </Button>
+                        </Link>
+                        
+                        {slide.showFlightDiscount && (
+                          <div className="flex items-center bg-red-600 text-white px-3 py-1 rounded-full animate-pulse">
+                            <Percent className="h-4 w-4 mr-1" />
+                            <span className="font-bold">-40%</span>
+                            <Airplane className="h-4 w-4 mx-1" />
+                            <span className="text-sm">sur les vols</span>
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </div>

@@ -9,6 +9,7 @@ import OffersCarousel from "@/components/OffersCarousel";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { MapPin } from "lucide-react";
+import PromoBubble from "@/components/PromoBubble";
 
 const Index = () => {
   // Sélectionner quelques destinations populaires
@@ -80,6 +81,27 @@ const Index = () => {
               />
             ))}
           </div>
+        </div>
+      </section>
+      
+      {/* Section Promotion Flight Tickets */}
+      <section className="py-12 bg-red-600">
+        <div className="container mx-auto px-4 text-center">
+          <div className="relative inline-block mb-4 animate-pulse">
+            <div className="absolute -inset-1 rounded-full blur-sm bg-white opacity-70"></div>
+            <div className="relative bg-white text-red-600 text-6xl font-black py-4 px-8 rounded-full">
+              -40%
+            </div>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Promotion Exceptionnelle sur les Billets d'Avion</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Pour une durée limitée, profitez d'une réduction de 40% sur tous nos billets d'avion pour des destinations de rêve
+          </p>
+          <Link to="/offres">
+            <Button size="lg" className="bg-white text-red-600 hover:bg-gray-100">
+              Découvrir nos offres
+            </Button>
+          </Link>
         </div>
       </section>
       
@@ -205,6 +227,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      {/* Add the floating promo bubble */}
+      <PromoBubble />
     </div>
   );
 };

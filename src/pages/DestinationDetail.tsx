@@ -11,6 +11,10 @@ const DestinationDetail = () => {
   const [destination, setDestination] = useState<typeof destinations[0] | null>(null);
   const { toast } = useToast();
   const whatsappNumber = "+33745913946";
+  const [selectedClass, setSelectedClass] = useState<"economy" | "business">("economy");
+  
+  // Business class costs 60% more than economy
+  const businessClassPrice = destination ? Math.round(destination.price * 1.6) : 0;
   
   useEffect(() => {
     const foundDestination = destinations.find(d => d.id === id);
@@ -24,7 +28,10 @@ const DestinationDetail = () => {
   const handleWhatsAppClick = () => {
     if (!destination) return;
     
-    const message = encodeURIComponent(`Bonjour, je suis intéressé(e) par votre destination "${destination.name}" à ${destination.country}. Pouvez-vous me donner plus d'informations ?`);
+    const travelClass = selectedClass === "business" ? "en classe affaire" : "en classe économique";
+    const price = selectedClass === "business" ? businessClassPrice : destination.price;
+    
+    const message = encodeURIComponent(`Bonjour, je suis intéressé(e) par votre destination "${destination.name}" à ${destination.country} ${travelClass} à ${price}€. Pouvez-vous me donner plus d'informations ?`);
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
     
     toast({
@@ -114,10 +121,31 @@ const DestinationDetail = () => {
           {/* Sidebar */}
           <div className="bg-gray-50 rounded-lg p-6 h-fit">
             <div className="mb-6">
-              <div className="flex justify-between items-center mb-2">
-                <p className="text-lg font-semibold">Prix à partir de</p>
-                <p className="text-2xl font-bold text-altura">{destination.price} €</p>
+              <h3 className="text-lg font-semibold mb-3">Choisissez votre classe de voyage</h3>
+              
+              {/* Class selection */}
+              <div className="grid grid-cols-2 gap-3 mb-4">
+                <div 
+                  className={`border rounded-lg p-3 cursor-pointer ${selectedClass === "economy" 
+                    ? "border-altura bg-altura/10" 
+                    : "border-gray-300"}`}
+                  onClick={() => setSelectedClass("economy")}
+                >
+                  <div className="font-medium">Classe Économique</div>
+                  <div className="text-2xl font-bold text-altura mt-1">{destination.price} €</div>
+                </div>
+                
+                <div 
+                  className={`border rounded-lg p-3 cursor-pointer ${selectedClass === "business" 
+                    ? "border-altura bg-altura/10" 
+                    : "border-gray-300"}`}
+                  onClick={() => setSelectedClass("business")}
+                >
+                  <div className="font-medium">Classe Affaire</div>
+                  <div className="text-2xl font-bold text-altura mt-1">{businessClassPrice} €</div>
+                </div>
               </div>
+              
               <p className="text-sm text-gray-500">Par personne, vols inclus</p>
             </div>
             
