@@ -18,6 +18,7 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Testimonials = lazy(() => import("./pages/Testimonials"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const DestinationDetail = lazy(() => import("./pages/DestinationDetail"));
+const OfferDetail = lazy(() => import("./pages/OfferDetail"));
 
 // Loading component
 const Loading = () => (
@@ -66,6 +67,7 @@ function App() {
                   <Route path="/destinations" element={<Destinations />} />
                   <Route path="/destinations/:id" element={<DestinationDetail />} />
                   <Route path="/offres" element={<Offers />} />
+                  <Route path="/offres/:id" element={<OfferDetail />} />
                   <Route path="/avis" element={<Testimonials />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/reservation" element={<Reservation />} />
