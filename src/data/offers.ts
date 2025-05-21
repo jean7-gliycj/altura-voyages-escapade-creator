@@ -13,6 +13,86 @@ export interface Offer {
 
 export const offers: Offer[] = [
   {
+    id: "zanzibar-beach-escape",
+    title: "Évasion Plage à Zanzibar",
+    image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?auto=format&fit=crop&w=800",
+    originalPrice: 2290,
+    discountedPrice: 1790,
+    duration: "8 jours / 7 nuits",
+    description: "Séjour de rêve sur les plages paradisiaques de Zanzibar avec hébergement en resort 5 étoiles en formule tout inclus.",
+    details: "Offrez-vous une expérience inoubliable sur l'île de Zanzibar, connue pour ses plages de sable blanc immaculé et ses eaux turquoise. Vous séjournerez dans un resort 5 étoiles situé directement sur la plage de Nungwi, régulièrement citée parmi les plus belles plages du monde. Profitez de la formule tout inclus pour savourer la cuisine locale et internationale dans les différents restaurants du resort. Détendez-vous au bord de la piscine à débordement avec vue sur l'océan Indien ou participez aux nombreuses activités proposées par l'établissement.",
+    inclusions: [
+      "Vols aller-retour",
+      "Transferts aéroport-hôtel",
+      "Hébergement 7 nuits en chambre deluxe vue océan",
+      "Formule tout inclus (repas et boissons)",
+      "Activités nautiques non motorisées",
+      "Une excursion dans Stone Town",
+      "Accès illimité aux installations du resort"
+    ],
+    exclusions: [
+      "Excursions supplémentaires",
+      "Sports nautiques motorisés",
+      "Soins spa",
+      "Pourboires",
+      "Dépenses personnelles"
+    ]
+  },
+  {
+    id: "zanzibar-culture-discovery",
+    title: "Découverte Culturelle de Zanzibar",
+    image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=800",
+    originalPrice: 1890,
+    discountedPrice: 1490,
+    duration: "6 jours / 5 nuits",
+    description: "Circuit culturel pour découvrir l'histoire fascinante de Zanzibar, ses épices et son patrimoine unique.",
+    details: "Ce circuit culturel vous plongera au cœur de l'histoire riche et fascinante de Zanzibar. Vous explorerez Stone Town, la vieille ville classée au patrimoine mondial de l'UNESCO, avec ses ruelles étroites, ses portes sculptées et son mélange unique d'influences arabes, persanes, indiennes et européennes. Visitez les plantations d'épices pour découvrir pourquoi Zanzibar est surnommée 'l'île aux épices'. Vous aurez également l'occasion de visiter la Prison Island et de rencontrer ses habitants centenaires : les tortues géantes d'Aldabra. Le circuit comprend également une journée dans la forêt de Jozani pour observer les singes colobes rouges, une espèce endémique de Zanzibar.",
+    inclusions: [
+      "Vols aller-retour",
+      "Transferts aéroport-hôtel",
+      "Hébergement 5 nuits en boutique-hôtel",
+      "Petit-déjeuner quotidien",
+      "Guide francophone pendant les visites",
+      "Entrées aux sites mentionnés",
+      "Tour des épices avec déjeuner inclus",
+      "Visite de Prison Island et de la forêt de Jozani"
+    ],
+    exclusions: [
+      "Déjeuners et dîners (sauf mentionné)",
+      "Boissons",
+      "Pourboires",
+      "Visa pour la Tanzanie"
+    ]
+  },
+  {
+    id: "zanzibar-diving-safari",
+    title: "Safari Plongée à Zanzibar",
+    image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800",
+    originalPrice: 2490,
+    discountedPrice: 1990,
+    duration: "9 jours / 8 nuits",
+    description: "Explorez les récifs coralliens exceptionnels de Zanzibar et partez à la découverte du parc marin de Mnemba Atoll.",
+    details: "Ce séjour est conçu pour les amateurs de plongée sous-marine qui souhaitent découvrir les fonds marins exceptionnels de Zanzibar. L'île est entourée de récifs coralliens préservés abritant une biodiversité marine impressionnante. Le point fort de ce séjour est l'exploration du parc marin de Mnemba Atoll, considéré comme l'un des meilleurs sites de plongée d'Afrique de l'Est. Vous aurez l'occasion de nager avec des dauphins, d'observer des tortues marines et de découvrir des milliers de poissons tropicaux dans des eaux cristallines. Le forfait comprend 10 plongées guidées avec des instructeurs expérimentés, ainsi que tout l'équipement nécessaire.",
+    inclusions: [
+      "Vols aller-retour",
+      "Transferts aéroport-hôtel-sites de plongée",
+      "Hébergement 8 nuits en hôtel bord de mer",
+      "Petit-déjeuner quotidien",
+      "10 plongées guidées (équipement inclus)",
+      "Excursion d'une journée au parc marin de Mnemba Atoll",
+      "Safari plongée de 2 jours au nord de l'île",
+      "Certification temporaire de plongée (si nécessaire)"
+    ],
+    exclusions: [
+      "Déjeuners et dîners",
+      "Boissons",
+      "Plongées supplémentaires",
+      "Certification PADI",
+      "Assurance plongée",
+      "Pourboires"
+    ]
+  },
+  {
     id: "summer-bali",
     title: "Évasion à Bali - Offre Spéciale Été",
     image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800",

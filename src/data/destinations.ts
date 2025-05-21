@@ -1,4 +1,3 @@
-
 export interface Destination {
   id: string;
   name: string;
@@ -11,6 +10,16 @@ export interface Destination {
 }
 
 export const destinations: Destination[] = [
+  {
+    id: "zanzibar",
+    name: "Zanzibar",
+    country: "Tanzanie",
+    continent: "Afrique",
+    price: 1590,
+    theme: "Plage",
+    image: "https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?auto=format&fit=crop&w=800",
+    description: "Découvrez les plages paradisiaques de sable blanc, les eaux cristallines turquoise et la riche culture swahilie de cette île tropicale de l'océan Indien."
+  },
   {
     id: "bali",
     name: "Bali",
@@ -262,7 +271,7 @@ export const destinations: Destination[] = [
     description: "Partez à l'aventure dans les Alpes françaises, avec des panoramas à couper le souffle et des activités pour toutes les saisons."
   },
   {
-    id: "hawai",
+    id: "hawaï",
     name: "Hawaï",
     country: "États-Unis",
     continent: "Amérique",
@@ -402,4 +411,3 @@ export const destinations: Destination[] = [
     description: "Profitez des meilleures conditions de vent pour le kitesurf sur les plages spectaculaires du nord-est brésilien."
   }
 ];
-
