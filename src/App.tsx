@@ -1,10 +1,9 @@
-
 import { Suspense, lazy, useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppWidget from "./components/WhatsAppWidget";
@@ -18,6 +17,7 @@ const Reservation = lazy(() => import("./pages/Reservation"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Testimonials = lazy(() => import("./pages/Testimonials"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+const DestinationDetail = lazy(() => import("./pages/DestinationDetail"));
 
 // Loading component
 const Loading = () => (
@@ -28,7 +28,7 @@ const Loading = () => (
 
 const queryClient = new QueryClient();
 
-const App = () => {
+function App() {
   useEffect(() => {
     // Google Analytics setup
     const script = document.createElement("script");
@@ -55,19 +55,20 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <Router>
           <div className="flex flex-col min-h-screen bg-black">
             <Navbar />
             <main className="flex-grow">
               <Suspense fallback={<Loading />}>
                 <Routes>
                   <Route path="/" element={<Index />} />
-                  <Route path="/destinations" element={<Destinations />} />
                   <Route path="/a-propos" element={<About />} />
+                  <Route path="/destinations" element={<Destinations />} />
+                  <Route path="/destinations/:id" element={<DestinationDetail />} />
                   <Route path="/offres" element={<Offers />} />
-                  <Route path="/reservation" element={<Reservation />} />
-                  <Route path="/contact" element={<Contact />} />
                   <Route path="/avis" element={<Testimonials />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/reservation" element={<Reservation />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </Suspense>
@@ -75,11 +76,11 @@ const App = () => {
             <Footer />
             <WhatsAppWidget />
           </div>
-        </BrowserRouter>
+        </Router>
       </TooltipProvider>
     </QueryClientProvider>
   );
-};
+}
 
 // Add window.dataLayer type
 declare global {
