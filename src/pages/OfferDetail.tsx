@@ -28,7 +28,7 @@ const OfferDetail = () => {
   const handleWhatsAppClick = () => {
     if (!offer) return;
     
-    const travelClass = selectedClass === "business" ? "en classe affaire" : "en classe économique";
+    const travelClass = selectedClass === "business" ? "en VIP" : "en classe économique";
     const price = selectedClass === "business" ? businessClassPrice : offer.discountedPrice;
     
     const message = encodeURIComponent(`Bonjour, je suis intéressé(e) par votre offre spéciale "${offer.title}" ${travelClass} à ${price}€. Pouvez-vous me donner plus d'informations ?`);
@@ -126,7 +126,7 @@ const OfferDetail = () => {
                     : "border-gray-300"}`}
                   onClick={() => setSelectedClass("business")}
                 >
-                  <div className="font-medium">Classe Affaire</div>
+                  <div className="font-medium text-black font-bold">VIP</div>
                   <div className="flex justify-between items-center mt-1">
                     <span className="text-sm text-gray-500 line-through">{Math.round(offer.originalPrice * 1.6)} €</span>
                     <span className="text-lg font-bold text-altura">{businessClassPrice} €</span>
