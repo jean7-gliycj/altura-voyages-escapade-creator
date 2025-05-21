@@ -21,14 +21,14 @@ const Navbar = () => {
   
   return (
     <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-90 backdrop-blur-sm z-50 shadow-sm">
-      <div className="container mx-auto px-4 py-3 md:py-4">
+      <div className="container mx-auto px-4 py-2">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <img 
                 src="/lovable-uploads/9faaccf6-d73a-4cb3-b308-fc9a90914563.png" 
                 alt="Altura Voyages Logo" 
-                className="h-16 md:h-20 mr-3" 
+                className="h-24 md:h-28" 
               />
             </Link>
           </div>

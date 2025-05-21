@@ -14,7 +14,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/9faaccf6-d73a-4cb3-b308-fc9a90914563.png" 
                 alt="Altura Voyages Logo" 
-                className="h-24 mr-3" 
+                className="h-32 mr-3" 
               />
             </div>
             <p className="text-sm mb-4">
