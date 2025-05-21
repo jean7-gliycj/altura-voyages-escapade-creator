@@ -1,4 +1,3 @@
-
 import { FC } from "react";
 import { Button } from "@/components/ui/button";
 import { MessageSquare } from "lucide-react";
@@ -26,7 +25,7 @@ export const DestinationSidebar: FC<DestinationSidebarProps> = ({
   const businessClassPrice = Math.round(price * 1.6);
   
   const handleWhatsAppClick = () => {
-    const travelClass = selectedClass === "business" ? "en classe affaire" : "en classe économique";
+    const travelClass = selectedClass === "business" ? "en classe VIP" : "en classe économique";
     const currentPrice = selectedClass === "business" ? businessClassPrice : price;
     
     const message = encodeURIComponent(`Bonjour, je suis intéressé(e) par votre destination "${name}" à ${country} ${travelClass} à ${currentPrice}€. Pouvez-vous me donner plus d'informations ?`);
@@ -61,7 +60,7 @@ export const DestinationSidebar: FC<DestinationSidebarProps> = ({
               : "border-gray-300 hover:border-altura/50"}`}
             onClick={() => onClassChange("business")}
           >
-            <div className="font-bold text-black text-base">Classe Affaire</div>
+            <div className="font-bold text-black text-base">VIP</div>
             <div className="text-2xl font-bold text-black mt-1">{businessClassPrice} €</div>
           </div>
         </div>
@@ -115,4 +114,3 @@ export const DestinationSidebar: FC<DestinationSidebarProps> = ({
     </div>
   );
 };
-
