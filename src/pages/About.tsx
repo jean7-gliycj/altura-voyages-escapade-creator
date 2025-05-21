@@ -18,19 +18,19 @@ const About = () => {
             <div className="md:w-1/2">
               <h2 className="font-display text-3xl font-bold mb-6 text-gray-800">Notre histoire</h2>
               <p className="text-gray-600 mb-4">
-                ALTURA VOYAGES est née en 2010 de la passion de deux amis globe-trotters, Pierre et Marie, qui souhaitaient partager leur amour du voyage et leur expertise avec d'autres passionnés d'aventures et de découvertes.
+                ALTURA VOYAGES a été fondée en 2010 à Paris par Mohamed Karim, un passionné de voyages qui, après 15 ans d'expérience dans le tourisme international, a décidé de créer sa propre agence spécialisée dans les voyages personnalisés.
               </p>
               <p className="text-gray-600 mb-4">
-                Au fil des années, notre agence s'est développée pour devenir une référence dans le domaine des voyages sur mesure, tout en conservant l'esprit d'authenticité et d'attention personnalisée qui nous caractérise depuis nos débuts.
+                Au départ modeste avec seulement 3 collaborateurs dans un petit bureau du 11ème arrondissement, notre agence s'est rapidement distinguée par son approche attentionnée et son expertise des destinations les plus prisées du Moyen-Orient et de l'Asie.
               </p>
               <p className="text-gray-600">
-                Aujourd'hui, ALTURA VOYAGES compte une équipe de 15 experts passionnés qui parcourent régulièrement le monde pour vous proposer les meilleures destinations et expériences.
+                Aujourd'hui, ALTURA VOYAGES compte une équipe de 15 experts voyageurs basés à Paris et Dubaï, chacun spécialisé dans des régions spécifiques du globe pour vous garantir des conseils avisés et des services sur mesure exceptionnels.
               </p>
             </div>
             <div className="md:w-1/2">
               <img 
-                src="https://images.unsplash.com/photo-1472566316349-bce77aa2a778?auto=format&fit=crop&w=800"
-                alt="Notre équipe ALTURA VOYAGES"
+                src="https://images.unsplash.com/photo-1512552288940-3a300922a275?auto=format&fit=crop&w=800" 
+                alt="Bureau ALTURA VOYAGES"
                 className="rounded-lg shadow-lg w-full h-auto"
               />
             </div>
@@ -115,69 +115,79 @@ const About = () => {
         <div className="container mx-auto px-4">
           <h2 className="font-display text-3xl font-bold mb-10 text-gray-800 text-center">Notre équipe</h2>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
-                src="/lovable-uploads/6858dc5d-14cd-4273-a2c3-f3d01e5e5dc0.png" 
-                alt="Alexandre Martin" 
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-4 text-center">
-                <h3 className="font-medium text-lg mb-1">Alexandre Martin</h3>
-                <p className="text-gray-600 mb-2">Co-fondateur</p>
-                <p className="text-sm text-gray-500">Expert Asie</p>
+              <div className="aspect-square w-full overflow-hidden">
+                <img 
+                  src="/lovable-uploads/6858dc5d-14cd-4273-a2c3-f3d01e5e5dc0.png" 
+                  alt="Alexandre Martin" 
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="p-3 text-center">
+                <h3 className="font-medium text-base mb-0.5">Alexandre Martin</h3>
+                <p className="text-gray-600 text-sm mb-1">Co-fondateur</p>
+                <p className="text-xs text-gray-500">Expert Asie</p>
               </div>
             </div>
             
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
-                src="/lovable-uploads/6f84144e-868c-4037-b18e-9b86ee9ace8a.png" 
-                alt="Clara Ndiaye" 
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-4 text-center">
-                <h3 className="font-medium text-lg mb-1">Clara Ndiaye</h3>
-                <p className="text-gray-600 mb-2">Co-fondatrice</p>
-                <p className="text-sm text-gray-500">Experte Afrique</p>
+              <div className="aspect-square w-full overflow-hidden">
+                <img 
+                  src="/lovable-uploads/6f84144e-868c-4037-b18e-9b86ee9ace8a.png" 
+                  alt="Clara Ndiaye" 
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="p-3 text-center">
+                <h3 className="font-medium text-base mb-0.5">Clara Ndiaye</h3>
+                <p className="text-gray-600 text-sm mb-1">Co-fondatrice</p>
+                <p className="text-xs text-gray-500">Experte Afrique</p>
               </div>
             </div>
             
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
-                src="/lovable-uploads/740ba02f-caa3-4476-8bcd-86102161aab1.png" 
-                alt="Mei Lin" 
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-4 text-center">
-                <h3 className="font-medium text-lg mb-1">Mei Lin</h3>
-                <p className="text-gray-600 mb-2">Directrice des opérations</p>
-                <p className="text-sm text-gray-500">Experte Asie du Sud-Est</p>
+              <div className="aspect-square w-full overflow-hidden">
+                <img 
+                  src="/lovable-uploads/740ba02f-caa3-4476-8bcd-86102161aab1.png" 
+                  alt="Mei Lin" 
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="p-3 text-center">
+                <h3 className="font-medium text-base mb-0.5">Mei Lin</h3>
+                <p className="text-gray-600 text-sm mb-1">Directrice des opérations</p>
+                <p className="text-xs text-gray-500">Experte Asie du Sud-Est</p>
               </div>
             </div>
             
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
-                src="/lovable-uploads/667bd6f8-f9ec-4c4d-9f73-07de0832daf9.png" 
-                alt="Carlos Ramirez" 
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-4 text-center">
-                <h3 className="font-medium text-lg mb-1">Carlos Ramirez</h3>
-                <p className="text-gray-600 mb-2">Responsable clientèle</p>
-                <p className="text-sm text-gray-500">Expert Amérique Latine</p>
+              <div className="aspect-square w-full overflow-hidden">
+                <img 
+                  src="/lovable-uploads/667bd6f8-f9ec-4c4d-9f73-07de0832daf9.png" 
+                  alt="Carlos Ramirez" 
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="p-3 text-center">
+                <h3 className="font-medium text-base mb-0.5">Carlos Ramirez</h3>
+                <p className="text-gray-600 text-sm mb-1">Responsable clientèle</p>
+                <p className="text-xs text-gray-500">Expert Amérique Latine</p>
               </div>
             </div>
 
             <div className="bg-white rounded-lg overflow-hidden shadow-md">
-              <img 
-                src="/lovable-uploads/8c373c70-f138-4419-9e2f-dadd4117889d.png" 
-                alt="David Laurent" 
-                className="w-full h-64 object-cover object-center"
-              />
-              <div className="p-4 text-center">
-                <h3 className="font-medium text-lg mb-1">David Laurent</h3>
-                <p className="text-gray-600 mb-2">Expert voyages d'aventure</p>
-                <p className="text-sm text-gray-500">Spécialiste Europe et Océanie</p>
+              <div className="aspect-square w-full overflow-hidden">
+                <img 
+                  src="/lovable-uploads/8c373c70-f138-4419-9e2f-dadd4117889d.png" 
+                  alt="David Laurent" 
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="p-3 text-center">
+                <h3 className="font-medium text-base mb-0.5">David Laurent</h3>
+                <p className="text-gray-600 text-sm mb-1">Expert voyages d'aventure</p>
+                <p className="text-xs text-gray-500">Spécialiste Europe et Océanie</p>
               </div>
             </div>
           </div>
