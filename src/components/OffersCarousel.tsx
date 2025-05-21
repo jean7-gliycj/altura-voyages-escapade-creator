@@ -28,6 +28,22 @@ const offerSlides = [
     buttonLink: '/offres'
   },
   {
+    id: 'zanzibar1',
+    image: 'https://images.unsplash.com/photo-1482881497185-d4a9ddbe4151?auto=format&fit=crop&w=1200&h=600&q=80',
+    title: 'Évasion Paradisiaque à Zanzibar',
+    description: 'Profitez des plages de sable blanc et des eaux cristallines',
+    buttonText: 'Découvrir Zanzibar',
+    buttonLink: '/destinations/zanzibar'
+  },
+  {
+    id: 'zanzibar2',
+    image: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&h=600&q=80',
+    title: 'Culture & Épices de Zanzibar',
+    description: 'Explorez l\'île aux épices et sa riche culture',
+    buttonText: 'Explorer les offres',
+    buttonLink: '/offres'
+  },
+  {
     id: '3',
     image: 'https://images.unsplash.com/photo-1526495124232-a04e1849168c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=600&q=80',
     title: 'Magnifique Paris',
