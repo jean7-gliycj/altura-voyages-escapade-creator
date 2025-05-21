@@ -79,12 +79,12 @@ const OfferDetail = () => {
           {/* Main content */}
           <div className="lg:col-span-2">
             <h2 className="font-display text-2xl font-semibold mb-6">Détails de l'offre</h2>
-            <p className="text-lg mb-6">{offer.details}</p>
+            <p className="text-lg mb-6">{offer.details || offer.description}</p>
             
             <div className="mb-8">
               <h3 className="font-display text-xl font-semibold mb-4">Inclus dans l'offre</h3>
               <ul className="list-disc pl-5 space-y-2">
-                {offer.inclusions.map((inclusion, index) => (
+                {offer.inclusions?.map((inclusion, index) => (
                   <li key={index}>{inclusion}</li>
                 ))}
               </ul>
@@ -93,7 +93,7 @@ const OfferDetail = () => {
             <div>
               <h3 className="font-display text-xl font-semibold mb-4">Non inclus</h3>
               <ul className="list-disc pl-5 space-y-2">
-                {offer.exclusions.map((exclusion, index) => (
+                {offer.exclusions?.map((exclusion, index) => (
                   <li key={index}>{exclusion}</li>
                 ))}
               </ul>
