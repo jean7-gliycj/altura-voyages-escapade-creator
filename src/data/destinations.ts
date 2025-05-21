@@ -1,3 +1,4 @@
+
 export interface Destination {
   id: string;
   name: string;
@@ -37,7 +38,7 @@ export const destinations: Destination[] = [
     continent: "Afrique",
     price: 590,
     theme: "Culture",
-    image: "https://images.unsplash.com/photo-1548784583-c71f7737383e?auto=format&fit=crop&w=800",
+    image: "https://images.unsplash.com/photo-1553869468-3d9949cc9363?auto=format&fit=crop&w=800",
     description: "Découvrez les souks animés, les palais ornés et l'atmosphère envoûtante de la ville rouge, un mélange parfait de tradition et de modernité."
   },
   {
@@ -157,7 +158,7 @@ export const destinations: Destination[] = [
     continent: "Amérique",
     price: 1590,
     theme: "Plage",
-    image: "https://images.unsplash.com/photo-1682553064442-8ee92014ec19?auto=format&fit=crop&w=800",
+    image: "https://images.unsplash.com/photo-1501917125304-96be07a951ce?auto=format&fit=crop&w=800",
     description: "Détendez-vous sur les plages de sable blanc, explorez les sites mayas voisins et profitez de la vie nocturne animée."
   },
   {
@@ -207,7 +208,7 @@ export const destinations: Destination[] = [
     continent: "Afrique",
     price: 490,
     theme: "Culture",
-    image: "https://images.unsplash.com/photo-1553913559-c7c6127193d6?auto=format&fit=crop&w=800",
+    image: "https://images.unsplash.com/photo-1548965594-33419cacd6af?auto=format&fit=crop&w=800",
     description: "Explorez cette ville impériale historique avec ses portes monumentales, son architecture marocaine traditionnelle et ses souks authentiques."
   },
   {
@@ -217,7 +218,7 @@ export const destinations: Destination[] = [
     continent: "Océanie",
     price: 3990,
     theme: "Plage",
-    image: "https://images.unsplash.com/photo-1589197331516-4d84b72943ae?auto=format&fit=crop&w=800",
+    image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800",
     description: "Séjournez dans un bungalow sur pilotis entouré de lagons turquoise et profitez de l'une des destinations les plus luxueuses du monde."
   },
   {
@@ -357,7 +358,7 @@ export const destinations: Destination[] = [
     continent: "Afrique",
     price: 890,
     theme: "Spa",
-    image: "https://images.unsplash.com/photo-1544161497-10774a97f4a4?auto=format&fit=crop&w=800",
+    image: "https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=800",
     description: "Profitez des rituels de beauté et de bien-être traditionnels marocains dans un authentique hammam."
   },
   {
@@ -409,5 +410,25 @@ export const destinations: Destination[] = [
     theme: "Sport Nautique",
     image: "https://images.unsplash.com/photo-1575832175837-5dfa2440f94c?auto=format&fit=crop&w=800",
     description: "Profitez des meilleures conditions de vent pour le kitesurf sur les plages spectaculaires du nord-est brésilien."
+  },
+  {
+    id: "polynesie-francaise",
+    name: "Polynésie Française",
+    country: "France",
+    continent: "Océanie",
+    price: 3790,
+    theme: "Plage",
+    image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=800",
+    description: "Explorez ce paradis sur terre composé d'îles volcaniques entourées de lagons turquoise et de récifs coralliens époustouflants."
+  },
+  {
+    id: "mexique-tour",
+    name: "Tour du Mexique",
+    country: "Mexique",
+    continent: "Amérique",
+    price: 1890,
+    theme: "Culture",
+    image: "https://images.unsplash.com/photo-1518638150340-f706e86654de?auto=format&fit=crop&w=800",
+    description: "Découvrez les pyramides mayas, les plages immaculées, la cuisine locale et la culture vibrante à travers un circuit complet du Mexique."
   }
 ];

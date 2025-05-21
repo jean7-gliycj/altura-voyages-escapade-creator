@@ -27,10 +27,10 @@ const DestinationCard = ({ id, name, image, country, continent, price, theme }: 
         </div>
         <div className="p-4">
           <div className="flex justify-between items-start mb-2">
-            <h3 className="font-display text-lg font-semibold">{name}</h3>
+            <h3 className="font-display text-lg font-semibold text-black">{name}</h3>
             <span className="text-sm font-medium text-green-600">{price} €</span>
           </div>
-          <div className="flex items-center text-sm text-gray-500">
+          <div className="flex items-center text-sm text-black">
             <span>{country}</span>
             <span className="mx-2">•</span>
             <span>{continent}</span>
