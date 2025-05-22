@@ -9,78 +9,13 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      profiles: {
-        Row: {
-          avatar_url: string | null
-          created_at: string
-          first_name: string | null
-          id: string
-          last_name: string | null
-          updated_at: string
-        }
-        Insert: {
-          avatar_url?: string | null
-          created_at?: string
-          first_name?: string | null
-          id: string
-          last_name?: string | null
-          updated_at?: string
-        }
-        Update: {
-          avatar_url?: string | null
-          created_at?: string
-          first_name?: string | null
-          id?: string
-          last_name?: string | null
-          updated_at?: string
-        }
-        Relationships: []
-      }
-      testimonials: {
-        Row: {
-          created_at: string
-          id: string
-          is_approved: boolean | null
-          location: string | null
-          name: string
-          rating: number
-          text: string
-          updated_at: string
-          user_id: string | null
-        }
-        Insert: {
-          created_at?: string
-          id?: string
-          is_approved?: boolean | null
-          location?: string | null
-          name: string
-          rating: number
-          text: string
-          updated_at?: string
-          user_id?: string | null
-        }
-        Update: {
-          created_at?: string
-          id?: string
-          is_approved?: boolean | null
-          location?: string | null
-          name?: string
-          rating?: number
-          text?: string
-          updated_at?: string
-          user_id?: string | null
-        }
-        Relationships: []
-      }
+      [_ in never]: never
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      is_admin: {
-        Args: { user_id: string }
-        Returns: boolean
-      }
+      [_ in never]: never
     }
     Enums: {
       [_ in never]: never

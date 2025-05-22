@@ -89,12 +89,12 @@ const partners = [
   },
   { 
     name: "Booking.com", 
-    logo: "/lovable-uploads/6f84144e-868c-4037-b18e-9b86ee9ace8a.png",
+    logo: "/lovable-uploads/6858dc5d-14cd-4273-a2c3-f3d01e5e5dc0.png",
     description: "Plateforme de réservation en ligne, Booking.com nous donne accès à plus de 28 millions d'hébergements à travers le monde."
   },
   { 
     name: "Expedia", 
-    logo: "/lovable-uploads/740ba02f-caa3-4476-8bcd-86102161aab1.png",
+    logo: "/lovable-uploads/6f84144e-868c-4037-b18e-9b86ee9ace8a.png",
     description: "Leader mondial des agences de voyage en ligne, Expedia nous offre un accès privilégié à des milliers d'hôtels, vols et activités."
   }
 ];
@@ -102,8 +102,8 @@ const partners = [
 // Liste pour le diaporama
 const partnersCarousel = [
   { name: "Air France", logo: "/lovable-uploads/66b71363-7db2-4887-b262-3ce32cfd76dd.png" },
-  { name: "Booking.com", logo: "/lovable-uploads/6f84144e-868c-4037-b18e-9b86ee9ace8a.png" },
-  { name: "Expedia", logo: "/lovable-uploads/740ba02f-caa3-4476-8bcd-86102161aab1.png" }
+  { name: "Booking.com", logo: "/lovable-uploads/6858dc5d-14cd-4273-a2c3-f3d01e5e5dc0.png" },
+  { name: "Expedia", logo: "/lovable-uploads/6f84144e-868c-4037-b18e-9b86ee9ace8a.png" }
 ];
 
 export default Partenaires;

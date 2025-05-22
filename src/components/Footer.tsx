@@ -173,8 +173,8 @@ const Footer = () => {
 // Partenaires
 const partners = [
   { name: "Air France", logo: "/lovable-uploads/66b71363-7db2-4887-b262-3ce32cfd76dd.png" },
-  { name: "Booking.com", logo: "/lovable-uploads/6f84144e-868c-4037-b18e-9b86ee9ace8a.png" },
-  { name: "Expedia", logo: "/lovable-uploads/740ba02f-caa3-4476-8bcd-86102161aab1.png" }
+  { name: "Booking.com", logo: "/lovable-uploads/6858dc5d-14cd-4273-a2c3-f3d01e5e5dc0.png" },
+  { name: "Expedia", logo: "/lovable-uploads/6f84144e-868c-4037-b18e-9b86ee9ace8a.png" }
 ];
 
 export default Footer;
