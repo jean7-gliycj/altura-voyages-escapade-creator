@@ -16,14 +16,14 @@ const Partenaires = () => {
       
       <div className="mb-10">
         <p className="text-lg mb-6">
-          ALTURA VOYAGES collabore avec les plus grands noms de l'industrie du voyage pour vous offrir 
+          ALTURA VOYAGES collabore avec des leaders mondiaux du voyage pour vous offrir 
           des expériences exceptionnelles et des services de qualité supérieure. Nos partenariats 
           stratégiques nous permettent de vous proposer des offres exclusives et des avantages uniques.
         </p>
       </div>
       
       {/* Section partenaires principaux avec logo et description */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
         {partners.map((partner, index) => (
           <div key={index} className="bg-card p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
             <div className="flex flex-col items-center">
@@ -43,7 +43,7 @@ const Partenaires = () => {
       
       {/* Diaporama de tous les logos */}
       <div className="mb-10">
-        <h2 className="text-2xl font-display font-semibold text-altura mb-6 text-center">Tous nos partenaires</h2>
+        <h2 className="text-2xl font-display font-semibold text-altura mb-6 text-center">Nos partenaires exclusifs</h2>
         <Carousel
           opts={{
             align: "start",
@@ -53,7 +53,7 @@ const Partenaires = () => {
         >
           <CarouselContent>
             {allPartners.map((partner, index) => (
-              <CarouselItem key={index} className="basis-1/2 md:basis-1/3 lg:basis-1/5">
+              <CarouselItem key={index} className="basis-1/2 md:basis-1/3">
                 <div className="bg-white p-4 rounded-md flex items-center justify-center h-32">
                   <img 
                     src={partner.logo} 
@@ -79,7 +79,7 @@ const Partenaires = () => {
             <div className="flex items-start gap-4">
               <Avatar className="w-16 h-16">
                 <AvatarImage src="https://i.pravatar.cc/150?img=1" />
-                <AvatarFallback>AC</AvatarFallback>
+                <AvatarFallback>AF</AvatarFallback>
               </Avatar>
               <div>
                 <p className="italic mb-3">
@@ -87,7 +87,7 @@ const Partenaires = () => {
                   Leur engagement envers l'excellence et leur service personnalisé correspondent parfaitement à nos valeurs."
                 </p>
                 <p className="font-semibold text-altura">Sophie Martin</p>
-                <p className="text-sm">Directrice des Partenariats, Accor Hotels</p>
+                <p className="text-sm">Directrice des Partenariats, Air France</p>
               </div>
             </div>
           </div>
@@ -95,15 +95,15 @@ const Partenaires = () => {
             <div className="flex items-start gap-4">
               <Avatar className="w-16 h-16">
                 <AvatarImage src="https://i.pravatar.cc/150?img=12" />
-                <AvatarFallback>TL</AvatarFallback>
+                <AvatarFallback>BE</AvatarFallback>
               </Avatar>
               <div>
                 <p className="italic mb-3">
-                  "En tant que compagnie aérienne, nous apprécions le professionnalisme d'ALTURA VOYAGES et leur
-                  capacité à créer des voyages mémorables pour nos passagers communs. Une collaboration fructueuse depuis plus de 5 ans."
+                  "En tant que plateforme de réservation mondiale, nous apprécions le professionnalisme d'ALTURA VOYAGES et leur
+                  capacité à créer des voyages mémorables pour nos clients communs. Une collaboration fructueuse depuis plus de 5 ans."
                 </p>
                 <p className="font-semibold text-altura">Thomas Leroy</p>
-                <p className="text-sm">Responsable Commercial, Air France</p>
+                <p className="text-sm">Responsable Commercial, Booking.com</p>
               </div>
             </div>
           </div>
@@ -140,49 +140,22 @@ const partners = [
     description: "Compagnie aérienne de référence, Air France nous permet de vous offrir des vols de qualité vers plus de 200 destinations dans le monde."
   },
   { 
-    name: "Accor Hotels", 
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/AccorHotels_logo.svg/1280px-AccorHotels_logo.svg.png",
-    description: "Leader mondial de l'hôtellerie, Accor Hotels nous garantit un hébergement de qualité dans plus de 5000 établissements à travers le monde."
-  },
-  { 
-    name: "Club Med", 
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Club_Med_Logo_2019.svg/2560px-Club_Med_Logo_2019.svg.png",
-    description: "Pionnier des villages de vacances tout compris, Club Med nous permet de vous proposer des séjours inoubliables dans des cadres exceptionnels."
-  },
-  { 
-    name: "TUI", 
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/TUI_logo_2018.svg/2560px-TUI_logo_2018.svg.png",
-    description: "Géant mondial du tourisme, TUI nous aide à créer des expériences de voyage complètes et sur mesure pour nos clients les plus exigeants."
-  },
-  { 
-    name: "Costa Croisières", 
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Costa_Cruises_Logo_%282014%29.svg/2560px-Costa_Cruises_Logo_%282014%29.svg.png",
-    description: "Spécialiste des croisières en Méditerranée et dans les Caraïbes, Costa nous permet de vous faire découvrir le monde autrement."
-  },
-  { 
     name: "Booking.com", 
     logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png",
     description: "Plateforme de réservation en ligne, Booking.com nous donne accès à plus de 28 millions d'hébergements à travers le monde."
+  },
+  { 
+    name: "Expedia", 
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Expedia_2012_logo.svg/1280px-Expedia_2012_logo.svg.png",
+    description: "Leader mondial des agences de voyage en ligne, Expedia nous offre un accès privilégié à des milliers d'hôtels, vols et activités."
   }
 ];
 
 // Liste complète des partenaires pour le diaporama
 const allPartners = [
   { name: "Air France", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png" },
-  { name: "Accor Hotels", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/AccorHotels_logo.svg/1280px-AccorHotels_logo.svg.png" },
-  { name: "Club Med", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Club_Med_Logo_2019.svg/2560px-Club_Med_Logo_2019.svg.png" },
-  { name: "Thomas Cook", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Thomas_Cook_logo.svg/1280px-Thomas_Cook_logo.svg.png" },
-  { name: "TUI", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/TUI_logo_2018.svg/2560px-TUI_logo_2018.svg.png" },
-  { name: "Kuoni", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Kuoni_logo.svg/1280px-Kuoni_logo.svg.png" },
   { name: "Booking.com", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png" },
-  { name: "Expedia", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Expedia_2012_logo.svg/1280px-Expedia_2012_logo.svg.png" },
-  { name: "Costa Croisières", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Costa_Cruises_Logo_%282014%29.svg/2560px-Costa_Cruises_Logo_%282014%29.svg.png" },
-  { name: "MSC Croisières", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/MSC_Cruises_logo.svg/2560px-MSC_Cruises_logo.svg.png" },
-  { name: "Emirates", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Emirates_logo.svg" },
-  { name: "Hilton", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Hilton_logo_white.svg/2560px-Hilton_logo_white.svg.png" },
-  { name: "Hertz", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Hertz_Logo_2020.svg/1200px-Hertz_Logo_2020.svg.png" },
-  { name: "Avis", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Avis_logo.svg/1280px-Avis_logo.svg.png" },
-  { name: "Lufthansa", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Lufthansa_logo.svg/2560px-Lufthansa_logo.svg.png" }
+  { name: "Expedia", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Expedia_2012_logo.svg/1280px-Expedia_2012_logo.svg.png" }
 ];
 
 export default Partenaires;

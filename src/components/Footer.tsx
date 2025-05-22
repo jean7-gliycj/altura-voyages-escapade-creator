@@ -144,7 +144,7 @@ const Footer = () => {
           >
             <CarouselContent>
               {partners.map((partner, index) => (
-                <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/5">
+                <CarouselItem key={index} className="md:basis-1/3">
                   <div className="bg-white p-4 rounded-md flex items-center justify-center h-24">
                     <img 
                       src={partner.logo} 
@@ -173,15 +173,8 @@ const Footer = () => {
 // Partenaires
 const partners = [
   { name: "Air France", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png" },
-  { name: "Accor Hotels", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/AccorHotels_logo.svg/1280px-AccorHotels_logo.svg.png" },
-  { name: "Club Med", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Club_Med_Logo_2019.svg/2560px-Club_Med_Logo_2019.svg.png" },
-  { name: "Thomas Cook", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Thomas_Cook_logo.svg/1280px-Thomas_Cook_logo.svg.png" },
-  { name: "TUI", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/TUI_logo_2018.svg/2560px-TUI_logo_2018.svg.png" },
-  { name: "Kuoni", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Kuoni_logo.svg/1280px-Kuoni_logo.svg.png" },
   { name: "Booking.com", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png" },
-  { name: "Expedia", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Expedia_2012_logo.svg/1280px-Expedia_2012_logo.svg.png" },
-  { name: "Costa Croisières", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Costa_Cruises_Logo_%282014%29.svg/2560px-Costa_Cruises_Logo_%282014%29.svg.png" },
-  { name: "MSC Croisières", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/MSC_Cruises_logo.svg/2560px-MSC_Cruises_logo.svg.png" }
+  { name: "Expedia", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Expedia_2012_logo.svg/1280px-Expedia_2012_logo.svg.png" }
 ];
 
 export default Footer;
