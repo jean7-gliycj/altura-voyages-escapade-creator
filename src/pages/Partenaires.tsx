@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { supabase } from '@/integrations/supabase/client';
 import {
@@ -20,17 +21,17 @@ const Partenaires = () => {
   const [partners] = useState<Partner[]>([
     { 
       name: "Air France",
-      logo: "/lovable-uploads/66b71363-7db2-4887-b262-3ce32cfd76dd.png",
+      logo: "https://logos-world.net/wp-content/uploads/2020/03/Air-France-Logo.png",
       description: "Compagnie aérienne de référence, Air France nous permet de vous offrir des vols de qualité vers plus de 200 destinations dans le monde."
     },
     { 
       name: "Booking.com", 
-      logo: "/lovable-uploads/6858dc5d-14cd-4273-a2c3-f3d01e5e5dc0.png",
+      logo: "https://logos-world.net/wp-content/uploads/2020/11/Booking-Logo.png",
       description: "Plateforme de réservation en ligne, Booking.com nous donne accès à plus de 28 millions d'hébergements à travers le monde."
     },
     { 
       name: "Expedia", 
-      logo: "/lovable-uploads/6f84144e-868c-4037-b18e-9b86ee9ace8a.png",
+      logo: "https://logos-world.net/wp-content/uploads/2021/02/Expedia-Logo.png",
       description: "Leader mondial des agences de voyage en ligne, Expedia nous offre un accès privilégié à des milliers d'hôtels, vols et activités."
     }
   ]);
