@@ -24,7 +24,7 @@ export const destinations: Destination[] = [
   {
     id: "bali",
     name: "Bali",
-    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
     country: "Indonésie",
     continent: "Asie",
     price: 1280,
@@ -54,7 +54,7 @@ export const destinations: Destination[] = [
   {
     id: "maldives",
     name: "Maldives",
-    image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    image: "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
     country: "Maldives",
     continent: "Asie",
     price: 1890,
@@ -94,7 +94,7 @@ export const destinations: Destination[] = [
   {
     id: "rio",
     name: "Rio de Janeiro",
-    image: "https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    image: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
     country: "Brésil",
     continent: "Amérique",
     price: 1280,
@@ -333,7 +333,7 @@ export const destinations: Destination[] = [
   {
     id: "hawaii-surf",
     name: "Surf à Hawaii",
-    image: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
     country: "États-Unis",
     continent: "Océanie",
     price: 1850,
@@ -343,7 +343,7 @@ export const destinations: Destination[] = [
   {
     id: "maldives-nautique",
     name: "Sports Nautiques aux Maldives",
-    image: "https://images.unsplash.com/photo-1540339832862-474599572de7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    image: "https://images.unsplash.com/photo-1573843981267-be1999ff37cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
     country: "Maldives",
     continent: "Asie",
     price: 2100,
@@ -355,7 +355,7 @@ export const destinations: Destination[] = [
   {
     id: "cancun-jetski",
     name: "Jet Ski à Cancún",
-    image: "https://images.unsplash.com/photo-1596463059283-da257325bae8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    image: "https://images.unsplash.com/photo-1564414872027-44303f543a7c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
     country: "Mexique",
     continent: "Amérique",
     price: 1300,
@@ -365,7 +365,7 @@ export const destinations: Destination[] = [
   {
     id: "miami-jetski",
     name: "Jet Ski à Miami",
-    image: "https://images.unsplash.com/photo-1533294455009-a77b7557d2d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    image: "https://images.unsplash.com/photo-1601924347330-f529d656e65a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
     country: "États-Unis",
     continent: "Amérique",
     price: 980,
@@ -377,7 +377,7 @@ export const destinations: Destination[] = [
   {
     id: "grande-barriere",
     name: "Grande Barrière de Corail",
-    image: "https://images.unsplash.com/photo-1571689936114-b816960abf93?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    image: "https://images.unsplash.com/photo-1582979512210-99b6a53386f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
     country: "Australie",
     continent: "Océanie",
     price: 1950,
@@ -387,7 +387,7 @@ export const destinations: Destination[] = [
   {
     id: "palau",
     name: "Palau",
-    image: "https://images.unsplash.com/photo-1559115768-d6a1e69f7bb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    image: "https://images.unsplash.com/photo-1544551763-92ab472cad5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
     country: "Palau",
     continent: "Océanie",
     price: 2300,
@@ -399,7 +399,7 @@ export const destinations: Destination[] = [
   {
     id: "alpes-suisses",
     name: "Alpes Suisses",
-    image: "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    image: "https://images.unsplash.com/photo-1531366599837-ce0c0a355dae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
     country: "Suisse",
     continent: "Europe",
     price: 1580,
@@ -409,7 +409,7 @@ export const destinations: Destination[] = [
   {
     id: "everest-basecamp",
     name: "Camp de Base de l'Everest",
-    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    image: "https://images.unsplash.com/photo-1486911278844-a81c5267e227?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
     country: "Népal",
     continent: "Asie",
     price: 2800,
@@ -421,7 +421,7 @@ export const destinations: Destination[] = [
   {
     id: "amazonie",
     name: "Amazonie",
-    image: "https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    image: "https://images.unsplash.com/photo-1570741066052-817c6de995c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
     country: "Brésil",
     continent: "Amérique",
     price: 1700,
@@ -431,7 +431,7 @@ export const destinations: Destination[] = [
   {
     id: "yellowstone",
     name: "Parc National de Yellowstone",
-    image: "https://images.unsplash.com/photo-1531785201418-67f8b8de0bc6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    image: "https://images.unsplash.com/photo-1553693417-c8e5211b1e6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
     country: "États-Unis",
     continent: "Amérique",
     price: 1400,
@@ -443,7 +443,7 @@ export const destinations: Destination[] = [
   {
     id: "serengeti",
     name: "Serengeti",
-    image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    image: "https://images.unsplash.com/photo-1547970810-dc1eac37d174?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
     country: "Tanzanie",
     continent: "Afrique",
     price: 2100,
@@ -453,7 +453,7 @@ export const destinations: Destination[] = [
   {
     id: "kruger-park",
     name: "Parc Kruger",
-    image: "https://images.unsplash.com/photo-1543598565-a4d221f0f26c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
+    image: "https://images.unsplash.com/photo-1551701113-60eec9564876?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=800&q=80",
     country: "Afrique du Sud",
     continent: "Afrique",
     price: 1680,
