@@ -2,13 +2,6 @@
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Calendar, Instagram, Phone, Smartphone } from 'lucide-react';
 import WhatsAppWidget from '@/components/WhatsAppWidget';
-import { 
-  Carousel, 
-  CarouselContent, 
-  CarouselItem, 
-  CarouselNext, 
-  CarouselPrevious 
-} from '@/components/ui/carousel';
 
 const Footer = () => {
   return (
@@ -98,9 +91,6 @@ const Footer = () => {
               <li>
                 <Link to="/mentions-legales" className="hover:text-altura transition-colors">Mentions légales</Link>
               </li>
-              <li>
-                <Link to="/partenaires" className="hover:text-altura transition-colors">Nos partenaires</Link>
-              </li>
             </ul>
           </div>
           
@@ -132,36 +122,6 @@ const Footer = () => {
           </div>
         </div>
         
-        {/* Partenaires */}
-        <div className="mt-10 mb-8">
-          <h3 className="font-display text-lg font-semibold mb-4 text-center text-altura">Nos partenaires</h3>
-          <Carousel 
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            className="w-full"
-          >
-            <CarouselContent>
-              {partners.map((partner, index) => (
-                <CarouselItem key={index} className="md:basis-1/3">
-                  <div className="bg-white p-4 rounded-md flex items-center justify-center h-24">
-                    <img 
-                      src={partner.logo} 
-                      alt={`${partner.name} logo`} 
-                      className="max-h-16 max-w-full object-contain"
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <div className="flex justify-center mt-4">
-              <CarouselPrevious className="static mr-2 transform-none" />
-              <CarouselNext className="static ml-2 transform-none" />
-            </div>
-          </Carousel>
-        </div>
-        
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-xs text-gray-400">
           <p>© {new Date().getFullYear()} ALTURA VOYAGES. Tous droits réservés.</p>
         </div>
@@ -169,12 +129,5 @@ const Footer = () => {
     </footer>
   );
 };
-
-// Partenaires
-const partners = [
-  { name: "Air France", logo: "/lovable-uploads/66b71363-7db2-4887-b262-3ce32cfd76dd.png" },
-  { name: "Booking.com", logo: "/lovable-uploads/6858dc5d-14cd-4273-a2c3-f3d01e5e5dc0.png" },
-  { name: "Expedia", logo: "/lovable-uploads/6f84144e-868c-4037-b18e-9b86ee9ace8a.png" }
-];
 
 export default Footer;
