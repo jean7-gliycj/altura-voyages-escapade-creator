@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Carousel,
   CarouselContent,
@@ -76,64 +75,6 @@ const Partenaires = () => {
             <CarouselNext className="static ml-2 transform-none" />
           </div>
         </Carousel>
-      </div>
-      
-      {/* Section témoignages de partenaires */}
-      <div className="mb-10">
-        <h2 className="text-2xl font-display font-semibold text-altura mb-6 text-center">Témoignages de nos partenaires</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-card p-6 rounded-lg border border-gray-700">
-            <div className="flex items-start gap-4">
-              <Avatar className="w-16 h-16">
-                <AvatarImage src="https://i.pravatar.cc/150?img=1" />
-                <AvatarFallback>AF</AvatarFallback>
-              </Avatar>
-              <div>
-                <p className="italic mb-3">
-                  "Notre partenariat avec ALTURA VOYAGES a considérablement enrichi l'expérience de nos clients communs. 
-                  Leur engagement envers l'excellence et leur service personnalisé correspondent parfaitement à nos valeurs."
-                </p>
-                <p className="font-semibold text-altura">Sophie Martin</p>
-                <p className="text-sm">Directrice des Partenariats, Air France</p>
-              </div>
-            </div>
-          </div>
-          <div className="bg-card p-6 rounded-lg border border-gray-700">
-            <div className="flex items-start gap-4">
-              <Avatar className="w-16 h-16">
-                <AvatarImage src="https://i.pravatar.cc/150?img=12" />
-                <AvatarFallback>BE</AvatarFallback>
-              </Avatar>
-              <div>
-                <p className="italic mb-3">
-                  "En tant que plateforme de réservation mondiale, nous apprécions le professionnalisme d'ALTURA VOYAGES et leur
-                  capacité à créer des voyages mémorables pour nos clients communs. Une collaboration fructueuse depuis plus de 5 ans."
-                </p>
-                <p className="font-semibold text-altura">Thomas Leroy</p>
-                <p className="text-sm">Responsable Commercial, Booking.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      {/* Devenir partenaire */}
-      <div className="bg-card rounded-lg p-8 border border-gray-700">
-        <div className="text-center mb-6">
-          <h2 className="text-2xl font-display font-semibold text-altura mb-3">Devenir partenaire</h2>
-          <p className="max-w-3xl mx-auto">
-            Vous souhaitez rejoindre notre réseau de partenaires de confiance ? ALTURA VOYAGES est constamment à la recherche de nouvelles collaborations 
-            pour enrichir son offre et proposer des expériences toujours plus exceptionnelles à ses clients.
-          </p>
-        </div>
-        <div className="flex justify-center">
-          <a 
-            href="mailto:partenariat@alturavoyages.com" 
-            className="bg-altura text-black px-6 py-3 rounded-md font-semibold hover:bg-altura-light transition-colors"
-          >
-            Contactez notre service partenariat
-          </a>
-        </div>
       </div>
     </div>
   );
