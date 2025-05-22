@@ -84,26 +84,26 @@ const Partenaires = () => {
 const partners = [
   { 
     name: "Air France",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png",
+    logo: "/lovable-uploads/66b71363-7db2-4887-b262-3ce32cfd76dd.png",
     description: "Compagnie aérienne de référence, Air France nous permet de vous offrir des vols de qualité vers plus de 200 destinations dans le monde."
   },
   { 
     name: "Booking.com", 
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png",
+    logo: "/lovable-uploads/6f84144e-868c-4037-b18e-9b86ee9ace8a.png",
     description: "Plateforme de réservation en ligne, Booking.com nous donne accès à plus de 28 millions d'hébergements à travers le monde."
   },
   { 
     name: "Expedia", 
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Expedia_2012_logo.svg/1280px-Expedia_2012_logo.svg.png",
+    logo: "/lovable-uploads/740ba02f-caa3-4476-8bcd-86102161aab1.png",
     description: "Leader mondial des agences de voyage en ligne, Expedia nous offre un accès privilégié à des milliers d'hôtels, vols et activités."
   }
 ];
 
-// Liste pour le diaporama (restreinte aux 3 partenaires demandés)
+// Liste pour le diaporama
 const partnersCarousel = [
-  { name: "Air France", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png" },
-  { name: "Booking.com", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png" },
-  { name: "Expedia", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Expedia_2012_logo.svg/1280px-Expedia_2012_logo.svg.png" }
+  { name: "Air France", logo: "/lovable-uploads/66b71363-7db2-4887-b262-3ce32cfd76dd.png" },
+  { name: "Booking.com", logo: "/lovable-uploads/6f84144e-868c-4037-b18e-9b86ee9ace8a.png" },
+  { name: "Expedia", logo: "/lovable-uploads/740ba02f-caa3-4476-8bcd-86102161aab1.png" }
 ];
 
 export default Partenaires;
