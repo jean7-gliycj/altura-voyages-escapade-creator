@@ -9,6 +9,13 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+// Define partner types with proper interfaces
+interface Partner {
+  name: string;
+  logo: string;
+  description?: string;
+}
+
 const Partenaires = () => {
   return (
     <div className="container mx-auto py-12 px-4">
@@ -52,7 +59,7 @@ const Partenaires = () => {
           className="w-full"
         >
           <CarouselContent>
-            {allPartners.map((partner, index) => (
+            {partnersCarousel.map((partner, index) => (
               <CarouselItem key={index} className="basis-1/2 md:basis-1/3">
                 <div className="bg-white p-4 rounded-md flex items-center justify-center h-32">
                   <img 
@@ -151,8 +158,8 @@ const partners = [
   }
 ];
 
-// Liste complète des partenaires pour le diaporama
-const allPartners = [
+// Liste pour le diaporama (restreinte aux 3 partenaires demandés)
+const partnersCarousel = [
   { name: "Air France", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png" },
   { name: "Booking.com", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png" },
   { name: "Expedia", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Expedia_2012_logo.svg/1280px-Expedia_2012_logo.svg.png" }

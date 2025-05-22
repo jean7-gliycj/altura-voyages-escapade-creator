@@ -170,7 +170,7 @@ const Footer = () => {
   );
 };
 
-// Partenaires
+// Partenaires (limités aux 3 demandés)
 const partners = [
   { name: "Air France", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png" },
   { name: "Booking.com", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png" },
