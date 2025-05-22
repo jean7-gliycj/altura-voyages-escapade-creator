@@ -90,9 +90,12 @@ const Testimonials = () => {
       // Get the current user session
       const { data: { session } } = await supabase.auth.getSession();
       
-      // Prepare the testimonial data
+      // Prepare the testimonial data - make sure all required fields are included
       const testimonialData = {
-        ...values,
+        name: values.name,
+        location: values.location || null,
+        text: values.text,
+        rating: values.rating,
         user_id: session?.user?.id || null,
       };
       
@@ -126,9 +129,7 @@ const Testimonials = () => {
       console.error("Error submitting testimonial:", error);
       toast({
         title: "Error",
-        description: session?.user ? 
-          "Failed to submit testimonial. Please try again." :
-          "Please sign in to submit a testimonial.",
+        description: "Failed to submit testimonial. Please try again.",
         variant: "destructive",
       });
     }
