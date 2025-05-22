@@ -2,6 +2,13 @@
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Calendar, Instagram, Phone, Smartphone } from 'lucide-react';
 import WhatsAppWidget from '@/components/WhatsAppWidget';
+import { 
+  Carousel, 
+  CarouselContent, 
+  CarouselItem, 
+  CarouselNext, 
+  CarouselPrevious 
+} from '@/components/ui/carousel';
 
 const Footer = () => {
   return (
@@ -76,6 +83,25 @@ const Footer = () => {
                 <Link to="/avis" className="hover:text-altura transition-colors">Avis clients</Link>
               </li>
             </ul>
+            
+            <h3 className="font-display text-lg font-semibold mb-4 mt-6 text-altura">Informations légales</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/conditions-generales" className="hover:text-altura transition-colors">Conditions générales</Link>
+              </li>
+              <li>
+                <Link to="/politique-de-confidentialite" className="hover:text-altura transition-colors">Politique de confidentialité</Link>
+              </li>
+              <li>
+                <Link to="/faq" className="hover:text-altura transition-colors">FAQ</Link>
+              </li>
+              <li>
+                <Link to="/mentions-legales" className="hover:text-altura transition-colors">Mentions légales</Link>
+              </li>
+              <li>
+                <Link to="/partenaires" className="hover:text-altura transition-colors">Nos partenaires</Link>
+              </li>
+            </ul>
           </div>
           
           {/* Colonne 3 */}
@@ -106,15 +132,56 @@ const Footer = () => {
           </div>
         </div>
         
+        {/* Partenaires */}
+        <div className="mt-10 mb-8">
+          <h3 className="font-display text-lg font-semibold mb-4 text-center text-altura">Nos partenaires</h3>
+          <Carousel 
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {partners.map((partner, index) => (
+                <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/5">
+                  <div className="bg-white p-4 rounded-md flex items-center justify-center h-24">
+                    <img 
+                      src={partner.logo} 
+                      alt={`${partner.name} logo`} 
+                      className="max-h-16 max-w-full object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="flex justify-center mt-4">
+              <CarouselPrevious className="static mr-2 transform-none" />
+              <CarouselNext className="static ml-2 transform-none" />
+            </div>
+          </Carousel>
+        </div>
+        
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-xs text-gray-400">
           <p>© {new Date().getFullYear()} ALTURA VOYAGES. Tous droits réservés.</p>
         </div>
       </div>
-      
-      {/* WhatsApp Widget */}
-      <WhatsAppWidget />
     </footer>
   );
 };
+
+// Partenaires
+const partners = [
+  { name: "Air France", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Air_France_Logo.svg/2560px-Air_France_Logo.svg.png" },
+  { name: "Accor Hotels", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/AccorHotels_logo.svg/1280px-AccorHotels_logo.svg.png" },
+  { name: "Club Med", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Club_Med_Logo_2019.svg/2560px-Club_Med_Logo_2019.svg.png" },
+  { name: "Thomas Cook", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Thomas_Cook_logo.svg/1280px-Thomas_Cook_logo.svg.png" },
+  { name: "TUI", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/TUI_logo_2018.svg/2560px-TUI_logo_2018.svg.png" },
+  { name: "Kuoni", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Kuoni_logo.svg/1280px-Kuoni_logo.svg.png" },
+  { name: "Booking.com", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png" },
+  { name: "Expedia", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Expedia_2012_logo.svg/1280px-Expedia_2012_logo.svg.png" },
+  { name: "Costa Croisières", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Costa_Cruises_Logo_%282014%29.svg/2560px-Costa_Cruises_Logo_%282014%29.svg.png" },
+  { name: "MSC Croisières", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/MSC_Cruises_logo.svg/2560px-MSC_Cruises_logo.svg.png" }
+];
 
 export default Footer;
