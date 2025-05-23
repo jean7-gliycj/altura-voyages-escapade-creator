@@ -1,4 +1,5 @@
 
+
 const About = () => {
   return (
     <div className="min-h-screen pt-20 pb-16">
@@ -11,37 +12,10 @@ const About = () => {
         </div>
       </div>
       
-      {/* Notre histoire */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row gap-10 items-center">
-            <div className="md:w-1/2">
-              <h2 className="font-display text-3xl font-bold mb-6 text-gray-800">Notre histoire</h2>
-              <p className="text-gray-600 mb-4">
-                Fondée en 2010 par deux passionnés de voyages, Alexandre Martin et Clara Ndiaye, ALTURA VOYAGES est née d'un rêve partagé : créer une agence de voyage différente, centrée sur l'authenticité et la qualité des expériences proposées.
-              </p>
-              <p className="text-gray-600 mb-4">
-                Après avoir parcouru plus de 70 pays à travers les cinq continents, ils ont décidé de mettre leur expertise au service des voyageurs en quête d'aventures mémorables et de découvertes enrichissantes.
-              </p>
-              <p className="text-gray-600">
-                Aujourd'hui, notre équipe compte 12 experts passionnés, et nous accompagnons chaque année plus de 3 000 voyageurs vers leurs destinations de rêve.
-              </p>
-            </div>
-            <div className="md:w-1/2">
-              <img 
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800"
-                alt="Fondation ALTURA VOYAGES"
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      
       {/* Notre mission */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row-reverse gap-10 items-center">
+          <div className="flex flex-col md:flex-row gap-10 items-center">
             <div className="md:w-1/2">
               <h2 className="font-display text-3xl font-bold mb-6 text-gray-800">Notre mission</h2>
               <p className="text-gray-600 mb-4">
@@ -289,3 +263,4 @@ const About = () => {
 };
 
 export default About;
+
