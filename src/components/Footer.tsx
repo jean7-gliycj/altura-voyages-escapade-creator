@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Calendar, Instagram, Phone, Smartphone } from 'lucide-react';
 import WhatsAppWidget from '@/components/WhatsAppWidget';
@@ -74,9 +73,6 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/avis" className="hover:text-altura transition-colors">Avis clients</Link>
-              </li>
-              <li>
-                <Link to="/partenaires" className="hover:text-altura transition-colors">Partenaires</Link>
               </li>
             </ul>
             

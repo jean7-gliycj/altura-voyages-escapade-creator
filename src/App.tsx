@@ -1,4 +1,3 @@
-
 import { Suspense, lazy, useEffect } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -24,7 +23,6 @@ const ConditionsGenerales = lazy(() => import("./pages/ConditionsGenerales"));
 const PolitiqueConfidentialite = lazy(() => import("./pages/PolitiqueConfidentialite"));
 const FAQ = lazy(() => import("./pages/FAQ"));
 const MentionsLegales = lazy(() => import("./pages/MentionsLegales"));
-const Partenaires = lazy(() => import("./pages/Partenaires"));
 
 // Loading component
 const Loading = () => (
@@ -81,7 +79,6 @@ function App() {
                   <Route path="/politique-de-confidentialite" element={<PolitiqueConfidentialite />} />
                   <Route path="/faq" element={<FAQ />} />
                   <Route path="/mentions-legales" element={<MentionsLegales />} />
-                  <Route path="/partenaires" element={<Partenaires />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </Suspense>
