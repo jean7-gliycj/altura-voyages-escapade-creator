@@ -75,6 +75,9 @@ const Footer = () => {
               <li>
                 <Link to="/avis" className="hover:text-altura transition-colors">Avis clients</Link>
               </li>
+              <li>
+                <Link to="/partenaires" className="hover:text-altura transition-colors">Partenaires</Link>
+              </li>
             </ul>
             
             <h3 className="font-display text-lg font-semibold mb-4 mt-6 text-altura">Informations légales</h3>

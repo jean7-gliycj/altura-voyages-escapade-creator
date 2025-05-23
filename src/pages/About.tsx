@@ -11,6 +11,33 @@ const About = () => {
         </div>
       </div>
       
+      {/* Notre histoire */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row gap-10 items-center">
+            <div className="md:w-1/2">
+              <h2 className="font-display text-3xl font-bold mb-6 text-gray-800">Notre histoire</h2>
+              <p className="text-gray-600 mb-4">
+                Fondée en 2010 par deux passionnés de voyages, Alexandre Martin et Clara Ndiaye, ALTURA VOYAGES est née d'un rêve partagé : créer une agence de voyage différente, centrée sur l'authenticité et la qualité des expériences proposées.
+              </p>
+              <p className="text-gray-600 mb-4">
+                Après avoir parcouru plus de 70 pays à travers les cinq continents, ils ont décidé de mettre leur expertise au service des voyageurs en quête d'aventures mémorables et de découvertes enrichissantes.
+              </p>
+              <p className="text-gray-600">
+                Aujourd'hui, notre équipe compte 12 experts passionnés, et nous accompagnons chaque année plus de 3 000 voyageurs vers leurs destinations de rêve.
+              </p>
+            </div>
+            <div className="md:w-1/2">
+              <img 
+                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800"
+                alt="Fondation ALTURA VOYAGES"
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Notre mission */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
@@ -163,6 +190,97 @@ const About = () => {
                 <p className="text-xs text-gray-500">Spécialiste Europe et Océanie</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Nos certifications */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="font-display text-3xl font-bold mb-8 text-gray-800 text-center">Nos certifications</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+              <div className="flex items-start mb-4">
+                <div className="bg-altura/10 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-altura">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">IATA Accredited Agent</h3>
+                  <p className="text-gray-600">
+                    En tant qu'agent accrédité IATA, nous avons accès aux meilleurs tarifs aériens et pouvons vous offrir un service de billetterie efficace et fiable.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+              <div className="flex items-start mb-4">
+                <div className="bg-altura/10 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-altura">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Immatriculation ATOUT France</h3>
+                  <p className="text-gray-600">
+                    Notre immatriculation officielle auprès d'ATOUT France (IM006100048) garantit notre professionnalisme et notre conformité aux exigences légales du secteur du tourisme en France.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+              <div className="flex items-start mb-4">
+                <div className="bg-altura/10 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-altura">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Garantie financière APST</h3>
+                  <p className="text-gray-600">
+                    Nous sommes membres de l'Association Professionnelle de Solidarité du Tourisme (APST), qui garantit les fonds déposés par nos clients et assure leur rapatriement en cas de défaillance.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+              <div className="flex items-start mb-4">
+                <div className="bg-altura/10 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-altura">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Membre ASTA</h3>
+                  <p className="text-gray-600">
+                    Notre adhésion à l'American Society of Travel Advisors (ASTA) témoigne de notre engagement envers les normes éthiques et professionnelles les plus élevées du secteur du voyage.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* CTA */}
+      <section className="py-16 bg-altura bg-opacity-10">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="font-display text-3xl font-bold mb-6 text-gray-800">Prêt à vivre l'expérience ALTURA VOYAGES ?</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto mb-8">
+            Contactez nos experts dès aujourd'hui pour commencer à planifier votre prochain voyage d'exception.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="/contact" className="bg-altura hover:bg-altura/90 text-white px-6 py-3 rounded-md font-medium transition-colors">
+              Nous contacter
+            </a>
+            <a href="/reservation" className="bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-md font-medium transition-colors">
+              Réserver maintenant
+            </a>
           </div>
         </div>
       </section>
