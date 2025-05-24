@@ -44,7 +44,7 @@ const Testimonials = () => {
                   type="text"
                   id="name"
                   name="name"
-                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-altura text-black"
                 />
               </div>
               
@@ -55,7 +55,7 @@ const Testimonials = () => {
                   type="text"
                   id="location"
                   name="location"
-                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-altura text-black"
                 />
               </div>
             </div>
@@ -67,7 +67,7 @@ const Testimonials = () => {
                 type="text"
                 id="destination"
                 name="destination"
-                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-altura text-black"
               />
             </div>
             
@@ -93,7 +93,7 @@ const Testimonials = () => {
                 id="review"
                 name="review"
                 rows={4}
-                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-altura"
+                className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-altura text-black"
                 placeholder="Partagez votre expérience de voyage avec ALTURA VOYAGES..."
               />
             </div>
