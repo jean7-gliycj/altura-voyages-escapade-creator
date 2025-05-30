@@ -20,39 +20,28 @@ const TestimonialCard = ({ name, location, image, text, rating }: TestimonialCar
   };
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100 card-3d transform-gpu">
+    <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
       <div className="flex items-center mb-3">
-        <div className="btn-3d rounded-full p-0 bg-gradient-to-br from-altura/20 to-altura/40">
-          <Avatar className="w-10 h-10 mr-3">
-            <AvatarFallback className="bg-gradient-to-br from-altura/30 to-altura/60 text-gray-800 text-sm font-medium text-3d">
-              {getInitials(name)}
-            </AvatarFallback>
-          </Avatar>
-        </div>
+        <Avatar className="w-10 h-10 mr-3">
+          <AvatarFallback className="bg-gray-100 text-gray-600 text-sm font-medium">
+            {getInitials(name)}
+          </AvatarFallback>
+        </Avatar>
         <div>
-          <h4 className="font-medium text-sm text-gray-900 text-3d">{name}</h4>
+          <h4 className="font-medium text-sm text-gray-900">{name}</h4>
           <p className="text-xs text-gray-500">{location}</p>
         </div>
       </div>
       
       <div className="mb-2">
         {[...Array(5)].map((_, index) => (
-          <span 
-            key={index} 
-            className={`text-yellow-400 text-sm transition-all duration-300 hover:scale-125 inline-block ${
-              index < rating ? 'text-3d' : ''
-            }`}
-            style={{
-              filter: index < rating ? 'drop-shadow(0 2px 4px rgba(255, 193, 7, 0.5))' : 'none',
-              transform: 'translateZ(5px)'
-            }}
-          >
+          <span key={index} className="text-yellow-400 text-sm">
             {index < rating ? "★" : "☆"}
           </span>
         ))}
       </div>
       
-      <p className="text-gray-600 italic text-sm leading-relaxed">{text}</p>
+      <p className="text-gray-600 italic text-sm">{text}</p>
     </div>
   );
 };
