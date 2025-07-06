@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { Mail, MapPin, Calendar, Instagram, Phone, Smartphone } from 'lucide-react';
 import WhatsAppWidget from '@/components/WhatsAppWidget';
@@ -103,8 +104,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 h-5 w-5 text-altura shrink-0" />
-                <a href="mailto:alturavoyages@gmail.com" className="hover:text-altura transition-colors">
-                  alturavoyages@gmail.com
+                <a href="mailto:contact@alturavoyages.com" className="hover:text-altura transition-colors">
+                  contact@alturavoyages.com
                 </a>
               </li>
               <li className="flex items-center">

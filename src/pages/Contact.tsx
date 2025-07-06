@@ -83,8 +83,8 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-altura mr-3 shrink-0 mt-1" />
                 <div>
                   <h3 className="font-medium mb-1 text-white">Email</h3>
-                  <a href="mailto:alturavoyages@gmail.com" className="text-white hover:text-altura">
-                    alturavoyages@gmail.com
+                  <a href="mailto:contact@alturavoyages.com" className="text-white hover:text-altura">
+                    contact@alturavoyages.com
                   </a>
                   <p className="text-sm text-gray-300 mt-1">Réponse sous 24h</p>
                 </div>

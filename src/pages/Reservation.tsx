@@ -40,7 +40,7 @@ const Reservation = () => {
       // Also send via email using mailto
       const subject = `Nouvelle réservation: ${formData.destination}`;
       const body = `Détails de la réservation:\n\nNom: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\nTéléphone: ${formData.phone}\nDestination: ${formData.destination}\nDate départ: ${formData.departureDate}\nDate retour: ${formData.returnDate}\nAdultes: ${formData.adults}\nEnfants: ${formData.children}\nMessage: ${formData.message}`;
-      const mailtoUrl = `mailto:alturavoyages@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailtoUrl = `mailto:contact@alturavoyages.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       window.open(mailtoUrl, "_blank");
       
       // Show success notification
